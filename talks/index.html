@@ -14,6 +14,9 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://lcgasparri.github.io/bootstrap/css/bootstrap.min.css">
 
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://lcgasparri.github.io/bootstrap/icons/bootstrap-icons.min.css">
+
 </head>
 
 <body>
@@ -21,10 +24,20 @@
 	<!-- Header -->
 	<nav class="navbar navbar-expand-sm">
 		<div class="container pb-2 border-bottom">
-			<a class="navbar-brand">Luca Gasparri</a>
+			<!-- Brand and toggle -->
+			<div class="d-flex align-items-center">
+				<a class="navbar-brand me-3" href="#">Luca Gasparri</a>
+				<button class="btn btn-link" id="theme-toggle" aria-label="Toggle dark/light mode">
+					<i class="bi bi-moon-fill" id="theme-icon"></i>
+				</button>
+			</div>
+
+			<!-- Navbar toggler -->
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
+
+			<!-- Navbar links -->
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item">
@@ -107,6 +120,33 @@
 
 	<!-- JavaScript -->
 	<script src="https://lcgasparri.github.io/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script>
+		const themeToggle = document.getElementById('theme-toggle');
+		const themeIcon = document.getElementById('theme-icon');
+	  
+		// Check for saved theme preference or use system preference
+		if (localStorage.getItem('color-mode') === 'dark' ||
+			(!('color-mode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+		  document.documentElement.setAttribute('data-bs-theme', 'dark');
+		  themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
+		} else {
+		  document.documentElement.setAttribute('data-bs-theme', 'light');
+		}
+	  
+		// Toggle theme on button click
+		themeToggle.addEventListener('click', () => {
+		  const currentTheme = document.documentElement.getAttribute('data-bs-theme');
+		  if (currentTheme === 'dark') {
+			document.documentElement.setAttribute('data-bs-theme', 'light');
+			themeIcon.classList.replace('bi-sun-fill', 'bi-moon-fill');
+			localStorage.setItem('color-mode', 'light');
+		  } else {
+			document.documentElement.setAttribute('data-bs-theme', 'dark');
+			themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
+			localStorage.setItem('color-mode', 'dark');
+		  }
+		});
+	</script>
 
 </body>
 
