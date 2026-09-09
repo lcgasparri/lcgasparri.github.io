@@ -1,34 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en">
 
 <head>
 
 	<title>Contact | Luca Gasparri</title>
 
-	<meta charset=utf-8>
-	<meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name=author content="Luca Gasparri">
-	<meta name=viewport content="width=device-width, initial-scale=1">
-	<link rel="icon" href="https://lcgasparri.github.io/images/lambda.ico">
+	<meta charset="utf-8">
+	<meta name="description" content="Contact details and office location of Luca Gasparri, CNRS researcher at the STL lab, Universit&eacute; de Lille">
+	<meta name="author" content="Luca Gasparri">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href="https://lcgasparri.github.io/contact/">
+	<link rel="icon" href="/images/lambda.ico">
+
+	<!-- Theme applied before first paint. -->
+	<script>
+		(function () {
+			let mode = null;
+			try { mode = localStorage.getItem('color-mode'); } catch (e) {}
+			if (mode !== 'dark' && mode !== 'light') {
+				mode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+			}
+			document.documentElement.setAttribute('data-bs-theme', mode);
+		})();
+	</script>
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="https://lcgasparri.github.io/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
 
 	<!-- Icons -->
-	<link rel="stylesheet" href="https://lcgasparri.github.io/bootstrap/icons/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="/bootstrap/icons/bootstrap-icons.min.css">
 
 </head>
 
 <body>
 
 	<!-- Header -->
-	<nav class="navbar navbar-expand-sm">
+	<nav class="navbar navbar-expand-sm" aria-label="Main">
 		<div class="container pb-2 border-bottom">
 			<!-- Brand and toggle -->
 			<div class="d-flex align-items-center">
-				<a class="navbar-brand me-3">Luca Gasparri</a>
-				<button class="btn btn-link" id="theme-toggle" aria-label="Toggle dark/light mode">
-					<i class="bi bi-moon-fill" id="theme-icon"></i>
+				<a class="navbar-brand me-3" href="/">Luca Gasparri</a>
+				<button class="btn btn-link link-body-emphasis" type="button" id="theme-toggle" aria-label="Switch to dark mode">
+					<i class="bi bi-moon-fill" id="theme-icon" aria-hidden="true"></i>
 				</button>
 			</div>
 
@@ -41,19 +54,19 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/">Home</a>
+						<a class="nav-link" href="/">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/research/">Research</a>
+						<a class="nav-link" href="/research/">Research</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/talks/">Talks</a>
+						<a class="nav-link" href="/talks/">Talks</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/misc/">Misc</a>
+						<a class="nav-link" href="/misc/">Misc</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Contact</a>
+						<a class="nav-link active" aria-current="page" href="/contact/">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -69,27 +82,35 @@
 
 	<!-- Contact -->
 	<div class="container pt-4 pb-4">
-		<address>
-			STL, UMR CNRS 8163, Universit&eacute; de Lille<br>
-			Domaine du Pont de Bois, Rue du Barreau<br>
-			59650 Villeneuve d&rsquo;Ascq, FRANCE
-		</address>
-		<p>
-			B&acirc;timent B, Bureau B1.681<br>
-			<a href="https://osm.org/go/0EgKg5QXP-?m=" target="_blank" rel="noopener">openstreetmap</a> |
-			<a href="https://masalle.univ-lille.fr/resultat?numsalle=B1.681" target="_blank" rel="noopener">campus map</a>
-		</p>
-		<p>
-			<code>&lt;myfirstname&gt;.&lt;mylastname&gt;&#64;cnrs.fr</code><br>
-		</p>
-		<p>
-			Find me on <a href="https://philpeople.org/profiles/luca-gasparri/" target="_blank" rel="noopener">PhilPeople</a>,
-			<a href="https://orcid.org/0000-0002-0270-9262" target="_blank" rel="noopener">OrcID</a>,
-			and <a href="https://hal.science/search/index/q/*/authIdHal_s/luca-gasparri" target="_blank" rel="noopener">HAL</a>.
-		</p>
+		<dl class="row mb-0">
+			<dt class="col-sm-2 fw-normal text-body-secondary small">Address</dt>
+			<dd class="col-sm-10">
+				<address class="mb-0">
+					STL, UMR CNRS 8163, Universit&eacute; de Lille<br>
+					Domaine du Pont de Bois, Rue du Barreau<br>
+					59650 Villeneuve d&rsquo;Ascq, FRANCE
+				</address>
+			</dd>
+			<dt class="col-sm-2 fw-normal text-body-secondary small">Office</dt>
+			<dd class="col-sm-10">
+				B&acirc;timent B, Bureau B1.681<br>
+				<a href="https://osm.org/go/0EgKg5QXP-?m=" target="_blank" rel="noopener">openstreetmap</a> &middot;
+				<a href="https://masalle.univ-lille.fr/resultat?numsalle=B1.681" target="_blank" rel="noopener">campus map</a>
+			</dd>
+			<dt class="col-sm-2 fw-normal text-body-secondary small">Email</dt>
+			<dd class="col-sm-10">
+				<span class="font-monospace">&lt;myfirstname&gt;.&lt;mylastname&gt;&#64;cnrs.fr</span>
+			</dd>
+			<dt class="col-sm-2 fw-normal text-body-secondary small">Profiles</dt>
+			<dd class="col-sm-10">
+				<a href="https://philpeople.org/profiles/luca-gasparri/" target="_blank" rel="noopener">PhilPeople</a> &middot;
+				<a href="https://orcid.org/0000-0002-0270-9262" target="_blank" rel="noopener">ORCID</a> &middot;
+				<a href="https://hal.science/search/index/q/*/authIdHal_s/luca-gasparri" target="_blank" rel="noopener">HAL</a>
+			</dd>
+		</dl>
 		<div class="col-12 col-md-9 col-lg-8 col-xl-7 col-xxl-6 pt-3 pb-3">
 			<div class="ratio ratio-16x9">
-				<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=3.122012047679164%2C50.62674726569862%2C3.134768633753993%2C50.63096682649396&amp;layer=mapnik&amp;marker=50.6288570934341%2C3.128390340716578" class="border border-primary rounded-3"></iframe>
+				<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=3.122012047679164%2C50.62674726569862%2C3.134768633753993%2C50.63096682649396&amp;layer=mapnik&amp;marker=50.6288570934341%2C3.128390340716578" class="border rounded-3" title="Map of the STL lab location in Villeneuve d&rsquo;Ascq" loading="lazy"></iframe>
 			</div>
 		</div>
 	</div>
@@ -104,34 +125,8 @@
 	</div>
 
 	<!-- JavaScript -->
-	<script src="https://lcgasparri.github.io/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script>
-		const themeToggle = document.getElementById('theme-toggle');
-		const themeIcon = document.getElementById('theme-icon');
-	  
-		// Check for saved theme preference or use system preference
-		if (localStorage.getItem('color-mode') === 'dark' ||
-			(!('color-mode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-		  document.documentElement.setAttribute('data-bs-theme', 'dark');
-		  themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
-		} else {
-		  document.documentElement.setAttribute('data-bs-theme', 'light');
-		}
-	  
-		// Toggle theme on button click
-		themeToggle.addEventListener('click', () => {
-		  const currentTheme = document.documentElement.getAttribute('data-bs-theme');
-		  if (currentTheme === 'dark') {
-			document.documentElement.setAttribute('data-bs-theme', 'light');
-			themeIcon.classList.replace('bi-sun-fill', 'bi-moon-fill');
-			localStorage.setItem('color-mode', 'light');
-		  } else {
-			document.documentElement.setAttribute('data-bs-theme', 'dark');
-			themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
-			localStorage.setItem('color-mode', 'dark');
-		  }
-		});
-	</script>
+	<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/theme.js"></script>
 
 </body>
 

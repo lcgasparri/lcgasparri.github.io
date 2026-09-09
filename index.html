@@ -1,37 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en">
 
 <head>
 
 	<title>Luca Gasparri</title>
 
-	<meta charset=utf-8>
-	<meta name=description content="Personal website of Luca Gasparri, a researcher at the Centre National de la Recherche Scientifique">
-	<meta name=keywords content="luca gasparri,luca,gasparri,CNRS,STL,lille,philosophy,philosophie,filosofia,language,langage,sprache,linguaggio,mind,esprit,geist,mente,linguistics,
-	linguistique,sprachwissenschaft,linguistik,linguistics,semantics,semantique,semantik,semantica,meaning,sens,bedeutung,significato">
-	<meta name=author content="Luca Gasparri">
-	<meta name=viewport content="width=device-width, initial-scale=1 shrink-to-fit=no">
-	<link rel=canonical href="https://lcgasparri.github.io">
-	<link rel="icon" href="https://lcgasparri.github.io/images/lambda.ico">
+	<meta charset="utf-8">
+	<meta name="description" content="Personal website of Luca Gasparri, a researcher at the Centre National de la Recherche Scientifique">
+	<meta name="keywords" content="luca gasparri,luca,gasparri,CNRS,STL,lille,philosophy,philosophie,filosofia,language,langage,sprache,linguaggio,mind,esprit,geist,mente,linguistics,linguistique,sprachwissenschaft,linguistik,semantics,semantique,semantik,semantica,meaning,sens,bedeutung,significato">
+	<meta name="author" content="Luca Gasparri">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href="https://lcgasparri.github.io/">
+	<link rel="icon" href="/images/lambda.ico">
+
+	<!-- Theme applied before first paint. -->
+	<script>
+		(function () {
+			let mode = null;
+			try { mode = localStorage.getItem('color-mode'); } catch (e) {}
+			if (mode !== 'dark' && mode !== 'light') {
+				mode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+			}
+			document.documentElement.setAttribute('data-bs-theme', mode);
+		})();
+	</script>
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="https://lcgasparri.github.io/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
 
 	<!-- Icons -->
-	<link rel="stylesheet" href="https://lcgasparri.github.io/bootstrap/icons/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="/bootstrap/icons/bootstrap-icons.min.css">
 
 </head>
 
 <body>
 
 	<!-- Header -->
-	<nav class="navbar navbar-expand-sm">
+	<nav class="navbar navbar-expand-sm" aria-label="Main">
 		<div class="container pb-2 border-bottom">
 			<!-- Brand and toggle -->
 			<div class="d-flex align-items-center">
-				<a class="navbar-brand me-3">Luca Gasparri</a>
-				<button class="btn btn-link" id="theme-toggle" aria-label="Toggle dark/light mode">
-					<i class="bi bi-moon-fill" id="theme-icon"></i>
+				<a class="navbar-brand me-3" href="/">Luca Gasparri</a>
+				<button class="btn btn-link link-body-emphasis" type="button" id="theme-toggle" aria-label="Switch to dark mode">
+					<i class="bi bi-moon-fill" id="theme-icon" aria-hidden="true"></i>
 				</button>
 			</div>
 
@@ -44,19 +55,19 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
+						<a class="nav-link active" aria-current="page" href="/">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/research/">Research</a>
+						<a class="nav-link" href="/research/">Research</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/talks/">Talks</a>
+						<a class="nav-link" href="/talks/">Talks</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/misc/">Misc</a>
+						<a class="nav-link" href="/misc/">Misc</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/contact/">Contact</a>
+						<a class="nav-link" href="/contact/">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -70,15 +81,14 @@
 		</h1>
 	</div>
 
-
 	<!-- Home -->
 	<div class="container pt-4 pb-4">
 		<div class="row justify-content-center">
 			<div class="col-xl-3 col-lg-4 col-md-5 col-6">
-				<img src="images/JA-ap.jpg" class="img-fluid mt-1 mb-4 rounded-circle img-thumbnail" alt="Pic">
+				<img src="/images/JA-ap.jpg" class="img-fluid mt-1 mb-4 rounded-circle img-thumbnail" alt="&lsquo;Aperture&rsquo;, by Jason Anderson">
 			</div>
 			<div class="col-xl-9 col-lg-8 col-md-12 col-12">
-				<p class=mt-2>
+				<p class="mt-2">
 					I&rsquo;m a <a href="https://www.cnrs.fr/" target="_blank" rel="noopener">CNRS</a> researcher and a member of the <a href="https://stl.univ-lille.fr/" target="_blank" rel="noopener">STL</a> lab in Lille, France.
 				</p>
 				<p>
@@ -93,15 +103,15 @@
 				</p>
 				<p>
 					Earlier, I did doctoral work in Philosophy and Cognitive Science at <a href="https://www.unisr.it" target="_blank" rel="noopener">San Raffaele University</a>,
-					and in Philosophy and Social Science at the <a href="http://www.institutnicod.org" target="_blank" rel="noopener">Institut Jean Nicod</a>, <a href="https://www.ens.psl.eu/" target="_blank" rel="noopener">ENS Paris</a>.
+					and in Philosophy and Social Science at the <a href="https://institutnicod.ens.psl.eu/" target="_blank" rel="noopener">Institut Jean Nicod</a>, <a href="https://www.ens.psl.eu/" target="_blank" rel="noopener">ENS Paris</a>.
 					I held visiting positions at <a href="https://philosophy.mit.edu" target="_blank" rel="noopener">MIT Linguistics and Philosophy</a>,
 					<a href="https://gsas.harvard.edu" target="_blank" rel="noopener">Harvard&rsquo;s GSAS</a>,
 					and the <a href="https://www.fmsh.fr" target="_blank" rel="noopener">Fondation Maison des Sciences de l&rsquo;Homme</a>.
 				</p>
 				<p>
-					My complete CV and current drafts are available <a href="https://lcgasparri.github.io/contact/">on request</a>.
+					My complete CV and current drafts are available <a href="/contact/">on request</a>.
 				</p>
-				<p>
+				<p class="text-body-secondary small">
 					Image: &lsquo;Aperture&rsquo;, by <a href="https://www.instagram.com/jasonandersonart/" target="_blank" rel="noopener">Jason Anderson</a>.
 				</p>
 			</div>
@@ -118,34 +128,8 @@
 	</div>
 
 	<!-- JavaScript -->
-	<script src="https://lcgasparri.github.io/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script>
-		const themeToggle = document.getElementById('theme-toggle');
-		const themeIcon = document.getElementById('theme-icon');
-	  
-		// Check for saved theme preference or use system preference
-		if (localStorage.getItem('color-mode') === 'dark' ||
-			(!('color-mode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-		  document.documentElement.setAttribute('data-bs-theme', 'dark');
-		  themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
-		} else {
-		  document.documentElement.setAttribute('data-bs-theme', 'light');
-		}
-	  
-		// Toggle theme on button click
-		themeToggle.addEventListener('click', () => {
-		  const currentTheme = document.documentElement.getAttribute('data-bs-theme');
-		  if (currentTheme === 'dark') {
-			document.documentElement.setAttribute('data-bs-theme', 'light');
-			themeIcon.classList.replace('bi-sun-fill', 'bi-moon-fill');
-			localStorage.setItem('color-mode', 'light');
-		  } else {
-			document.documentElement.setAttribute('data-bs-theme', 'dark');
-			themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
-			localStorage.setItem('color-mode', 'dark');
-		  }
-		});
-	</script>
+	<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/theme.js"></script>
 
 </body>
 

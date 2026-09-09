@@ -1,34 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en">
 
 <head>
 
 	<title>Research | Luca Gasparri</title>
 
-	<meta charset=utf-8>
-	<meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name=author content="Luca Gasparri">
-	<meta name=viewport content="width=device-width, initial-scale=1">
-	<link rel="icon" href="https://lcgasparri.github.io/images/lambda.ico">
+	<meta charset="utf-8">
+	<meta name="description" content="Publications of Luca Gasparri, CNRS researcher in philosophy of language, with abstracts and links to open-access versions">
+	<meta name="author" content="Luca Gasparri">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href="https://lcgasparri.github.io/research/">
+	<link rel="icon" href="/images/lambda.ico">
+
+	<!-- Theme applied before first paint. -->
+	<script>
+		(function () {
+			let mode = null;
+			try { mode = localStorage.getItem('color-mode'); } catch (e) {}
+			if (mode !== 'dark' && mode !== 'light') {
+				mode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+			}
+			document.documentElement.setAttribute('data-bs-theme', mode);
+		})();
+	</script>
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="https://lcgasparri.github.io/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
 
 	<!-- Icons -->
-	<link rel="stylesheet" href="https://lcgasparri.github.io/bootstrap/icons/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="/bootstrap/icons/bootstrap-icons.min.css">
 
 </head>
 
 <body>
 
 	<!-- Header -->
-	<nav class="navbar navbar-expand-sm">
+	<nav class="navbar navbar-expand-sm" aria-label="Main">
 		<div class="container pb-2 border-bottom">
 			<!-- Brand and toggle -->
 			<div class="d-flex align-items-center">
-				<a class="navbar-brand me-3">Luca Gasparri</a>
-				<button class="btn btn-link" id="theme-toggle" aria-label="Toggle dark/light mode">
-					<i class="bi bi-moon-fill" id="theme-icon"></i>
+				<a class="navbar-brand me-3" href="/">Luca Gasparri</a>
+				<button class="btn btn-link link-body-emphasis" type="button" id="theme-toggle" aria-label="Switch to dark mode">
+					<i class="bi bi-moon-fill" id="theme-icon" aria-hidden="true"></i>
 				</button>
 			</div>
 
@@ -41,19 +54,19 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/">Home</a>
+						<a class="nav-link" href="/">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Research</a>
+						<a class="nav-link active" aria-current="page" href="/research/">Research</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/talks/">Talks</a>
+						<a class="nav-link" href="/talks/">Talks</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/misc/">Misc</a>
+						<a class="nav-link" href="/misc/">Misc</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/contact/">Contact</a>
+						<a class="nav-link" href="/contact/">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -69,20 +82,17 @@
 
 	<!-- Research -->
 	<div class="container pt-4 pb-4">
-		<p class="pb-2">
-			<small>&lsquo;hal&rsquo; links to a free-access version on <a href="https://hal.science/" target="_blank" rel="noopener">HAL Open Science</a></small>
+		<p class="text-body-secondary small pb-2">
+			&lsquo;hal&rsquo; links to a free-access version on <a href="https://hal.science/" target="_blank" rel="noopener">HAL Open Science</a>
 		</p>
 
 		<p>
-			<strong>Singular generic &lsquo;the&rsquo; and uniqueness </strong><br>
-			<em>Proceedings of LENLS 21</em><br>
-			w/ <a href="http://gerhard.schaden.free.fr/" target="_blank" rel="noopener">Gerhard Schaden</a><br>
-			<a data-bs-toggle="collapse" href=#sggenthe aria-expanded="false" role="button" aria-controls=sggenthe>abstract</a> |
-			<a href="https://lcgasparri.github.io/docs/sggenthe.pdf" target="_blank" rel="noopener">local</a> |
-			in press
+			Singular generic &lsquo;the&rsquo; and uniqueness <br>
+			<span class="text-body-secondary small">Proceedings of LENLS 21, in press &middot; with <a href="https://pro.univ-lille.fr/gerhard-schaden/" target="_blank" rel="noopener">Gerhard Schaden</a></span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#sggenthe" aria-expanded="false" role="button" aria-controls="sggenthe">abstract</a> &middot; <a href="/docs/sggenthe.pdf" target="_blank" rel="noopener">local</a></span>
 		</p>
-		<div id=sggenthe class=collapse>
-			<p class="font-monospace small">
+		<div id="sggenthe" class="collapse">
+			<p class="small border-start ps-3">
 				Generic sentences with singular <em>the</em> (GSTs) are standardly assumed to obey the uniqueness presupposition of the &#953;-operator, extended to kinds.
 				We argue that when GSTs are embedded in discourse contexts featuring competing taxonomic satisfiers of the NP, the presuppositional demands of the definite article are not enforced as expected by prominent analyses.
 				We begin by reviewing two major accounts of definite singular generics: Chierchia&rsquo;s (1998) determiner account and Dayal&rsquo;s (2004) NP account. Next, we document the pattern and argue that it is not immediately predicted by either analysis.
@@ -92,14 +102,12 @@
 		</div>
 
 		<p>
-			<strong>Words, articulations, and utterance plans</strong><br>
-			<em>Philosophy and Phenomenological Research</em>, 2026<br>
-			<a data-bs-toggle="collapse" href=#words-art aria-expanded="false" role="button" aria-controls=words-art>abstract</a> |
-			<a href="https://hal.science/hal-05507158" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1111/phpr.70096" target="_blank" rel="noopener">doi</a>
+			Words, articulations, and utterance plans<br>
+			<span class="text-body-secondary small">Philosophy and Phenomenological Research, 2026</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#words-art" aria-expanded="false" role="button" aria-controls="words-art">abstract</a> &middot; <a href="https://hal.science/hal-05507158" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1111/phpr.70096" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=words-art class=collapse>
-			<p class="font-monospace small">
+		<div id="words-art" class="collapse">
+			<p class="small border-start ps-3">
 				Under what conditions does an externale (a sequence of speech sounds, a mark of ink) qualify as an articulation of a word?
 				Standard approaches to the issue appeal to intentions and to the satisfaction of performance standards, but these treatments are challenged by the intuitive admissibility of unintentional and anomalous tokens.
 				Recently, alternatives appealing to the role of lexical access in word production have been considered, but these, I argue, are threatened by counterexamples of their own.
@@ -110,15 +118,14 @@
 		</div>
 
 		<p>
-			<strong>Possessive freedom</strong><br>
-			In <em>Possession and the Part-Whole Relationship in Language</em>, Oxford UP<br>
-			<a data-bs-toggle="collapse" href=#poss-freedom aria-expanded="false" role="button" aria-controls=poss-freedom>abstract</a> |
-			in press
+			Possessive freedom<br>
+			<span class="text-body-secondary small">In Possession and the Part-Whole Relationship in Language, Oxford UP, in press</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#poss-freedom" aria-expanded="false" role="button" aria-controls="poss-freedom">abstract</a></span>
 		</p>
-		<div id=poss-freedom class=collapse>
-			<p class="font-monospace small">
+		<div id="poss-freedom" class="collapse">
+			<p class="small border-start ps-3">
 				Prototypical possessives express relations whose content can be controlled by the discourse context and by the situation of utterance.
-				For instance, while <em>John&rsquo;s nephews</em> is readily taken to denote a set of individuals that stand in the <u>nephew</u> relation with John, given an appropriate context the genitive can felicitously pick out, say, a set of nephews that John has been tasked with supervising during a field trip.
+				For instance, while <em>John&rsquo;s nephews</em> is readily taken to denote a set of individuals that stand in the <em>nephew</em> relation with John, given an appropriate context the genitive can felicitously pick out, say, a set of nephews that John has been tasked with supervising during a field trip.
 				Many treatments regard this relational plasticity as a hallmark of possessive status. But what does this freedom of the possessive relation exactly amount to?
 				Peters &amp; Westerst&aring;hl (2013) characterize the property thus: &ldquo;Every possessive DP can be used in a sentence S in a context where that DP&rsquo;s possessive relation is none of the options provided semantically by S but instead comes somehow from the context in which the sentence is used.&rdquo;
 				I offer an argument that a suitably disambiguated reading of this characterization licenses in turn two distinct readings, and that there is a non-trivial choice to make over which of these readings is preferable.
@@ -127,15 +134,12 @@
 		</div>
 
 		<p>
-			<strong>Predicate nominals and essentializing inferences</strong><br>
-			<em>Synthese</em>, 2026<br>
-			w/ <a href="http://gerhard.schaden.free.fr/" target="_blank" rel="noopener">Gerhard Schaden</a><br>
-			<a data-bs-toggle="collapse" href=#essent aria-expanded="false" role="button" aria-controls=essent>abstract</a> |
-			<a href="https://hal.science/hal-05615855" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1007/s11229-026-05584-z" target="_blank" rel="noopener">doi</a>
+			Predicate nominals and essentializing inferences<br>
+			<span class="text-body-secondary small">Synthese, 2026 &middot; with <a href="https://pro.univ-lille.fr/gerhard-schaden/" target="_blank" rel="noopener">Gerhard Schaden</a></span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#essent" aria-expanded="false" role="button" aria-controls="essent">abstract</a> &middot; <a href="https://hal.science/hal-05615855" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1007/s11229-026-05584-z" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=essent class=collapse>
-			<p class="font-monospace small">
+		<div id="essent" class="collapse">
+			<p class="small border-start ps-3">
 				Several studies argue that predicate nominals are prone to essentialize: they trigger inferences that the entities to which they are applied belong to robust and homogeneous categories with stable, explanatory membership conditions.
 				But how consistent is this propensity?
 				We present evidence that although predicate nominals are indeed prone to essentialize, they do so variably, and that the spectrum includes predicate nominals and predicate-nominal types whose essentializing potential is indistinguishable from that of competing non-nominal formations.
@@ -145,14 +149,12 @@
 		</div>
 
 		<p>
-			<strong>Animal metasemantics</strong><br>
-			<em>Biology &amp; Philosophy</em>, 2025<br>
-			<a data-bs-toggle="collapse" href=#animal-meta aria-expanded="false" role="button" aria-controls=animal-meta>abstract</a> |
-			<a href="https://hal.science/hal-05264543" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1007/s10539-025-09993-1" target="_blank" rel="noopener">doi</a>
+			Animal metasemantics<br>
+			<span class="text-body-secondary small">Biology &amp; Philosophy, 2025</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#animal-meta" aria-expanded="false" role="button" aria-controls="animal-meta">abstract</a> &middot; <a href="https://hal.science/hal-05264543" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1007/s10539-025-09993-1" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=animal-meta class=collapse>
-			<p class="font-monospace small">
+		<div id="animal-meta" class="collapse">
+			<p class="small border-start ps-3">
 				Multiple scholars in animal communication research have proposed that models of animal signals should appropriate theoretical terminology and concepts from natural language semantics.
 				However, the application of semantic descriptors to nonhuman communication is a delicate undertaking.
 				The goal of this paper is to consider whether there are any basic methodological principles that can help us determine whether the appropriation of a semantic descriptor by an animal model is justified or unwarranted.
@@ -161,18 +163,15 @@
 				Finally, I showcase how these heuristics can assist theory production and help identify strengths and opportunities for improvement in emerging projects in animal linguistics.
 			</p>
 		</div>
-		
+
 		<p>
-			<strong>Slurring without nouns</strong><br>
-			<em>Topoi</em>, 2025<br>
-			w/ <a href="http://gerhard.schaden.free.fr/" target="_blank" rel="noopener">Gerhard Schaden</a><br>
-			<a data-bs-toggle="collapse" href=#slurs-nouns aria-expanded="false" role="button" aria-controls=slurs-nouns>abstract</a> |
-			<a href="https://hal.science/hal-05048819" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1007/s11245-025-10186-4" target="_blank" rel="noopener">doi</a>
+			Slurring without nouns<br>
+			<span class="text-body-secondary small">Topoi, 2025 &middot; with <a href="https://pro.univ-lille.fr/gerhard-schaden/" target="_blank" rel="noopener">Gerhard Schaden</a></span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#slurs-nouns" aria-expanded="false" role="button" aria-controls="slurs-nouns">abstract</a> &middot; <a href="https://hal.science/hal-05048819" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1007/s11245-025-10186-4" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=slurs-nouns class=collapse>
-			<p class="font-monospace small">
-				When we think of slurs in English - like the N-word, the F-word, and others - we tend to think of nouns rather than verbs or adjectives.
+		<div id="slurs-nouns" class="collapse">
+			<p class="small border-start ps-3">
+				When we think of slurs in English &ndash; like the N-word, the F-word, and others &ndash; we tend to think of nouns rather than verbs or adjectives.
 				This is probably not an accident: paradigm examples of slurs are indeed nominal in nature, and slurs exhibit a cross-linguistically robust tendency to concentrate in the grammatical class of nouns. But why?
 				Recent work appears to suggest that the distributional predominance of nominal slurs is due to the fact that the offensiveness characteristic of slurs is downstream from the inferential biases associated with nominals and their predicative uses.
 				We begin with describing this hypothesis, rehearsing the considerations in its favor, and clarifying its predictions.
@@ -182,14 +181,12 @@
 		</div>
 
 		<p>
-			<strong>Bare singular names and genericity</strong><br>
-			<em>Journal of Semantics</em>, 2024<br>
-			<a data-bs-toggle="collapse" href=#bare-names-generics aria-expanded="false" role="button" aria-controls=bare-names-generics>abstract</a> |
-			<a href="https://hal.science/hal-04791894" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1093/jos/ffae017" target="_blank" rel="noopener">doi</a>
+			Bare singular names and genericity<br>
+			<span class="text-body-secondary small">Journal of Semantics, 2024</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#bare-names-generics" aria-expanded="false" role="button" aria-controls="bare-names-generics">abstract</a> &middot; <a href="https://hal.science/hal-04791894" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1093/jos/ffae017" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=bare-names-generics class=collapse>
-			<p class="font-monospace small">
+		<div id="bare-names-generics" class="collapse">
+			<p class="small border-start ps-3">
 				Predicativists hold that proper names are count nouns with a predicative meaning, and treat bare singular names as predicative DPs headed by an unpronounced definite.
 				However, bare singular names exhibit differences in grammatical behavior from ordinary definite singulars.
 				One difference, it has been argued, is that while ordinary definite singulars can be interpreted generically, bare singular names cannot.
@@ -199,14 +196,12 @@
 		</div>
 
 		<p>
-			<strong>Meaning change you can make</strong><br>
-			<em>Synthese</em>, 2024<br>
-			<a data-bs-toggle="collapse" href=#meaning-change aria-expanded="false" role="button" aria-controls=meaning-change>abstract</a> |
-			<a href="https://hal.science/hal-04589410" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1007/s11229-024-04604-0" target="_blank" rel="noopener">doi</a>
+			Meaning change you can make<br>
+			<span class="text-body-secondary small">Synthese, 2024</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#meaning-change" aria-expanded="false" role="button" aria-controls="meaning-change">abstract</a> &middot; <a href="https://hal.science/hal-04589410" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1007/s11229-024-04604-0" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=meaning-change class=collapse>
-			<p class="font-monospace small">
+		<div id="meaning-change" class="collapse">
+			<p class="small border-start ps-3">
 				Standard metasemantic frameworks render word meanings resistant to the control of ordinary speakers, and hinder our ability to exercise sovereignty over the denotations of words.
 				The literature suggests three main responses to the problem: views on which ordinary denotational interventions cannot cause changes to semantic reality,
 				views on which we should drop the metasemantic premises that generate the difficulty, and views on which denotational interventions boil down to operations on a non-recalcitrant region of the semantic spectrum.
@@ -219,14 +214,12 @@
 		</div>
 
 		<p>
-			<strong>Inherent and probabilistic naturalness</strong><br>
-			<em>Philosophical Studies</em>, 2024<br>
-			<a data-bs-toggle="collapse" href=#natural-conventions aria-expanded="false" role="button" aria-controls=natural-conventions>abstract</a> |
-			<a href="https://hal.science/hal-04268871" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1007/s11098-023-02070-x" target="_blank" rel="noopener">doi</a>
+			Inherent and probabilistic naturalness<br>
+			<span class="text-body-secondary small">Philosophical Studies, 2024</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#natural-conventions" aria-expanded="false" role="button" aria-controls="natural-conventions">abstract</a> &middot; <a href="https://hal.science/hal-04268871" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1007/s11098-023-02070-x" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=natural-conventions class=collapse>
-			<p class="font-monospace small">
+		<div id="natural-conventions" class="collapse">
+			<p class="small border-start ps-3">
 				Standard accounts hold that regularities of behavior must be arbitrary to constitute a convention.
 				Yet, there is growing consensus that conventionality is a graded phenomenon, and that conventions can be more or less natural.
 				I develop an account of natural conventions that distinguishes two basic dimensions of conventional naturalness: a probabilistic dimension and an inherent one.
@@ -237,14 +230,12 @@
 		</div>
 
 		<p>
-			<strong>The first words ever spoken</strong><br>
-			<em>Synthese</em>, 2023<br>
-			<a data-bs-toggle="collapse" href=#first-word aria-expanded="false" role="button" aria-controls=first-word>abstract</a> |
-			<a href="https://hal.science/hal-04100213" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1007/s11229-023-04166-7" target="_blank" rel="noopener">doi</a>
+			The first words ever spoken<br>
+			<span class="text-body-secondary small">Synthese, 2023</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#first-word" aria-expanded="false" role="button" aria-controls="first-word">abstract</a> &middot; <a href="https://hal.science/hal-04100213" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1007/s11229-023-04166-7" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=first-word class=collapse>
-			<p class="font-monospace small">
+		<div id="first-word" class="collapse">
+			<p class="small border-start ps-3">
 				I argue that ontologies of words should engage with the emergence of lexical communication in the deep history of our line.
 				It may seem that the evolutionary origins of words are orthogonal to the analytical project of establishing the defining features of wordhood, and that an adequate ontology of words requires nothing more than an observation of the properties of modern languages.
 				I suggest instead that models of the initial stages of language evolution can offer valuable insights into the matter.
@@ -255,14 +246,12 @@
 		</div>
 
 		<p>
-			<strong>Lexical innovation and the periphery of language</strong><br>
-			<em>Linguistics and Philosophy</em>, 2022<br>
-			<a data-bs-toggle="collapse" href=#lexical-innovation aria-expanded="false" role="button" aria-controls=lexical-innovation>abstract</a> |
-			<a href="https://hal.science/hal-03635391v1" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1007/s10988-020-09319-2" target="_blank" rel="noopener">doi</a>
+			Lexical innovation and the periphery of language<br>
+			<span class="text-body-secondary small">Linguistics and Philosophy, 2022</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#lexical-innovation" aria-expanded="false" role="button" aria-controls="lexical-innovation">abstract</a> &middot; <a href="https://hal.science/hal-03635391v1" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1007/s10988-020-09319-2" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=lexical-innovation class=collapse>
-			<p class="font-monospace small">
+		<div id="lexical-innovation" class="collapse">
+			<p class="small border-start ps-3">
 				Lexical innovations (e.g., zero-derivations coined on the fly by a speaker) seem to bear semantic content.
 				Yet, such expressions cannot bear semantic content as a function of the conventions of meaning in force in the language, since they are not part of its lexicon.
 				This is in tension with the commonplace view that the semantic content of lexical expressions is constituted by semantic conventions.
@@ -275,15 +264,12 @@
 		</div>
 
 		<p>
-			<strong>Notions of arbitrariness</strong><br>
-			<em>Mind &amp; Language</em>, 2022<br>
-			w/ <a href="https://pierafilip.wixsite.com/pierafilippi" target="_blank" rel="noopener">Piera Filippi</a> et al.<br>
-			<a data-bs-toggle="collapse" href=#notions-arbitrariness aria-expanded="false" role="button" aria-controls=notions-arbitrariness>abstract</a> |
-			<a href="https://hal.science/hal-03831380" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1111/mila.12443" target="_blank" rel="noopener">doi</a>
+			Notions of arbitrariness<br>
+			<span class="text-body-secondary small">Mind &amp; Language, 2022 &middot; with <a href="https://pierafilip.wixsite.com/pierafilippi" target="_blank" rel="noopener">Piera Filippi</a> et al.</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#notions-arbitrariness" aria-expanded="false" role="button" aria-controls="notions-arbitrariness">abstract</a> &middot; <a href="https://hal.science/hal-03831380" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1111/mila.12443" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=notions-arbitrariness class=collapse>
-			<p class="font-monospace small">
+		<div id="notions-arbitrariness" class="collapse">
+			<p class="small border-start ps-3">
 				Arbitrariness is a distinctive feature of human language, and a growing body of comparative work is investigating its presence in animal communication. But what is arbitrariness, exactly?
 				We propose to distinguish four notions of semiotic arbitrariness:
 				a notion of opaque association between sign forms and semiotic functions, one of sign-function mapping optionality, one of acquisition-dependent sign-function coupling, and one of lack of motivatedness.
@@ -293,16 +279,13 @@
 		</div>
 
 		<p>
-			<strong>Optionality in animal communication</strong><br>
-			<em>Biological Reviews</em>, 2022<br>
-			w/ <a href="https://stuartkwatson.wordpress.com/" target="_blank" rel="noopener">Stuart K. Watson</a> et al.<br>
-			<a data-bs-toggle="collapse" href=#optionality-animals aria-expanded="false" role="button" aria-controls=optionality-animals>abstract</a> |
-			<a href="https://hal.science/hal-03745755" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1111/brv.12882" target="_blank" rel="noopener">doi</a>
+			Optionality in animal communication<br>
+			<span class="text-body-secondary small">Biological Reviews, 2022 &middot; with <a href="https://stuartkwatson.wordpress.com/" target="_blank" rel="noopener">Stuart K. Watson</a> et al.</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#optionality-animals" aria-expanded="false" role="button" aria-controls="optionality-animals">abstract</a> &middot; <a href="https://hal.science/hal-03745755" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1111/brv.12882" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=optionality-animals class=collapse>
-			<p class="font-monospace small">
-				A critical feature of language is that the form of words need not bear any perceptual similarity to their function - these relationships can be &ldquo;arbitrary&rdquo;.
+		<div id="optionality-animals" class="collapse">
+			<p class="small border-start ps-3">
+				A critical feature of language is that the form of words need not bear any perceptual similarity to their function &ndash; these relationships can be &ldquo;arbitrary&rdquo;.
 				The capacity to process these arbitrary form-function associations facilitates the enormous expressive power of language.
 				However, the evolutionary roots of our capacity for arbitrariness, i.e. the extent to which related abilities may be shared with animals, is largely unexamined.
 				We argue this is due to the challenges of applying such an intrinsically linguistic concept to animal communication, and address this by proposing a novel conceptual framework highlighting a key underpinning of linguistic arbitrariness, which is nevertheless applicable to non-human species.
@@ -315,14 +298,12 @@
 		</div>
 
 		<p>
-			<strong>&#346;a&#7749;karan monism and the limits of thought</strong><br>
-			<em>The Monist</em>, 2022<br>
-			<a data-bs-toggle="collapse" href=#sankaran-monism aria-expanded="false" role="button" aria-controls=sankaran-monism>abstract</a> |
-			<a href="https://hal.science/hal-03635381" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1093/monist/onab024" target="_blank" rel="noopener">doi</a>
+			&#346;a&#7749;karan monism and the limits of thought<br>
+			<span class="text-body-secondary small">The Monist, 2022</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#sankaran-monism" aria-expanded="false" role="button" aria-controls="sankaran-monism">abstract</a> &middot; <a href="https://hal.science/hal-03635381" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1093/monist/onab024" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=sankaran-monism class=collapse>
-			<p class="font-monospace small">
+		<div id="sankaran-monism" class="collapse">
+			<p class="small border-start ps-3">
 				A growing movement in contemporary philosophy of mind is looking back on Indian thought to gain new insights into the problem of consciousness.
 				This paper weighs the prospects of thinking about mentality through the lenses of &#346;a&#7749;karan Advaita Ved&amacr;nta.
 				To start, I outline micropsychist and cosmopsychist accounts of consciousness, introduce &#346;a&#7749;karan monism, and describe a potential reason of attraction of the framework over micropsychist and cosmopsychist alternatives.
@@ -332,31 +313,27 @@
 		</div>
 
 		<p>
-			<strong>Proportional dispositional predicates</strong><br>
-			<em>Synthese</em>, 2021<br>
-			<a data-bs-toggle="collapse" href=#proportions-dispositions aria-expanded="false" role="button" aria-controls=proportions-dispositions>abstract</a> |
-			<a href="https://hal.science/hal-03635360" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1007/s11229-021-03336-9" target="_blank" rel="noopener">doi</a>
+			Proportional dispositional predicates<br>
+			<span class="text-body-secondary small">Synthese, 2021</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#proportions-dispositions" aria-expanded="false" role="button" aria-controls="proportions-dispositions">abstract</a> &middot; <a href="https://hal.science/hal-03635360" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1007/s11229-021-03336-9" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=proportions-dispositions class=collapse>
-			<p class="font-monospace small">
+		<div id="proportions-dispositions" class="collapse">
+			<p class="small border-start ps-3">
 				Ordinary disposition ascriptions (DAs) appear to form a semantically heterogeneous class of clauses some of which can be straightforwardly analyzed as possibility claims, and some of which resist a simple quantificational treatment.
-				For example, while “The block is breakable” is true if the block breaks at a relevant possible world, for “The block is fragile” to be true it doesn&rsquo;t suffice that the block breaks at one of the worlds that matter to the evaluation of the ascription, since the block could break accidentally and yet be sturdy.
-				The contrast has been taken to indicate that sentences like “The block is fragile” don&rsquo;t introduce mere existential quantification over sets of worlds, and should be represented as claims about sufficient ratios or proportions of worlds.
+				For example, while &ldquo;The block is breakable&rdquo; is true if the block breaks at a relevant possible world, for &ldquo;The block is fragile&rdquo; to be true it doesn&rsquo;t suffice that the block breaks at one of the worlds that matter to the evaluation of the ascription, since the block could break accidentally and yet be sturdy.
+				The contrast has been taken to indicate that sentences like &ldquo;The block is fragile&rdquo; don&rsquo;t introduce mere existential quantification over sets of worlds, and should be represented as claims about sufficient ratios or proportions of worlds.
 				However, recent work has suggested that by pairing the recalcitrant DAs with modified manifestation phrases, we can generalize the standard analysis of existential DAs to the problematic examples, and state a uniform characterization of DAs as claims of possibility.
 				The paper discusses some counterexamples to the view that allegedly non-existential DAs are covert claims of fine-grained possibility, and sketches a hybrid account combining proportional quantification with fine-grained manifestations.
 			</p>
 		</div>
-		
+
 		<p>
-			<strong>Semantic supervenience</strong><br>
-			<em>Inquiry</em>, 2021<br>
-			<a data-bs-toggle="collapse" href=#semantic-supervenience aria-expanded="false" role="button" aria-controls=semantic-supervenience>abstract</a> |
-			<a href="https://hal.science/hal-03635386" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1080/0020174X.2021.1930579" target="_blank" rel="noopener">doi</a>
+			Semantic supervenience<br>
+			<span class="text-body-secondary small">Inquiry, 2021</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#semantic-supervenience" aria-expanded="false" role="button" aria-controls="semantic-supervenience">abstract</a> &middot; <a href="https://hal.science/hal-03635386" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1080/0020174X.2021.1930579" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=semantic-supervenience class=collapse>
-			<p class="font-monospace small">
+		<div id="semantic-supervenience" class="collapse">
+			<p class="small border-start ps-3">
 				It is common belief that semantic properties supervene on non-semantic properties: no two possible worlds can be non-semantic duplicates and fail to be semantic duplicates.
 				The view enjoys somewhat of an orthodoxy status in contemporary philosophy of language and metaphysics, and is often assumed without argument.
 				Yet, work by Stephen Kearns and Ofra Magidor has claimed that it is vulnerable to a variant of the classical arguments against the supervenience of the phenomenal on the physical.
@@ -367,15 +344,12 @@
 		</div>
 
 		<p>
-			<strong>Hearing meanings: the revenge of context</strong><br>
-			<em>Synthese</em>, 2021<br>
-			w/ <a href=https://caphi.univ-nantes.fr/_Michael-Murez_ target="_blank" rel="noopener">Michael Murez</a><br>
-			<a data-bs-toggle="collapse" href=#hearing-meanings aria-expanded="false" role="button" aria-controls=hearing-meanings>abstract</a> |
-			<a href="https://hal.science/hal-03281849" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1007/s11229-019-02398-0" target="_blank" rel="noopener">doi</a>
+			Hearing meanings: the revenge of context<br>
+			<span class="text-body-secondary small">Synthese, 2021 &middot; with <a href="https://www.caphi-philo.fr/user/michael.murezuniv-nantes-fr/" target="_blank" rel="noopener">Michael Murez</a></span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#hearing-meanings" aria-expanded="false" role="button" aria-controls="hearing-meanings">abstract</a> &middot; <a href="https://hal.science/hal-03281849" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1007/s11229-019-02398-0" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=hearing-meanings class=collapse>
-			<p class="font-monospace small">
+		<div id="hearing-meanings" class="collapse">
+			<p class="small border-start ps-3">
 				According to the perceptual view of language comprehension, listeners typically recover high-level linguistic properties such as utterance meaning without inferential work.
 				The perceptual view is subject to the Objection from Context: since utterance meaning is massively context-sensitive, and context-sensitivity requires cognitive inference, the perceptual view is false.
 				In recent work, Berit Brogaard provides a challenging reply to this objection. She argues that in language comprehension context-sensitivity is typically exercised not through inferences, but rather through top-down perceptual modulations or perceptual learning.
@@ -385,14 +359,12 @@
 		</div>
 
 		<p>
-			<strong>A pluralistic theory of wordhood</strong><br>
-			<em>Mind &amp; Language</em>, 2020<br>
-			<a data-bs-toggle="collapse" href=#pluralism-words aria-expanded="false" role="button" aria-controls=pluralism-words>abstract</a> |
-			<a href="https://hal.science/hal-03635397" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1111/mila.12297" target="_blank" rel="noopener">doi</a>
+			A pluralistic theory of wordhood<br>
+			<span class="text-body-secondary small">Mind &amp; Language, 2020</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#pluralism-words" aria-expanded="false" role="button" aria-controls="pluralism-words">abstract</a> &middot; <a href="https://hal.science/hal-03635397" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1111/mila.12297" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=pluralism-words class=collapse>
-			<p class="font-monospace small">
+		<div id="pluralism-words" class="collapse">
+			<p class="small border-start ps-3">
 				What are words and how should we individuate them? There are two main answers on the philosophical market. For some, words are bundles of structural-functional features defining a unique performance profile.
 				For others, words are noneternal continuants individuated by their causal-historical ancestry. These conceptions offer competing views of the nature of words, and it seems natural to assume that at most one of them can capture the essence of wordhood.
 				This paper makes a case for pluralism about wordhood: the view that there is a plurality of acceptable conceptions of the nature of words, none of which is uniquely entitled to inform us as to what wordhood consists in.
@@ -400,14 +372,12 @@
 		</div>
 
 		<p>
-			<strong>A numeral oddity</strong><br>
-			<em>Journal of Semantics</em>, 2019<br>
-			<a data-bs-toggle="collapse" href=#numeral-oddity aria-expanded="false" role="button" aria-controls=numeral-oddity>abstract</a> |
-			<a href="https://hal.science/hal-03635403" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1093/jos/ffz006" target="_blank" rel="noopener">doi</a>
+			A numeral oddity<br>
+			<span class="text-body-secondary small">Journal of Semantics, 2019</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#numeral-oddity" aria-expanded="false" role="button" aria-controls="numeral-oddity">abstract</a> &middot; <a href="https://hal.science/hal-03635403" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1093/jos/ffz006" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=numeral-oddity class=collapse>
-			<p class="font-monospace small">
+		<div id="numeral-oddity" class="collapse">
+			<p class="small border-start ps-3">
 				Natural language appears to allow the ascription of properties of numeral symbols to the denotation of number referring phrases.
 				The paper describes the phenomenon and presents two alternative explanations for why it obtains. One combining an intuitive semantics for number referring phrases and a predicate-shifting mechanism,
 				the other assigning number referring phrases a structured denotation consisting of two parts: a mathematical object (the number) and a contextually determined numeral symbol.
@@ -416,15 +386,13 @@
 		</div>
 
 		<p>
-			<strong>Pronominal anaphora, coreference, and closed quotation marks</strong><br>
-			<em>Mind &amp; Language</em>, 2019<br>
-			<a data-bs-toggle="collapse" href=#anaphora-quotation aria-expanded="false" role="button" aria-controls=anaphora-quotation>abstract</a> |
-			<a href="https://hal.science/hal-03635408" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1111/mila.12213" target="_blank" rel="noopener">doi</a>
+			Pronominal anaphora, coreference, and closed quotation marks<br>
+			<span class="text-body-secondary small">Mind &amp; Language, 2019</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#anaphora-quotation" aria-expanded="false" role="button" aria-controls="anaphora-quotation">abstract</a> &middot; <a href="https://hal.science/hal-03635408" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1111/mila.12213" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=anaphora-quotation class=collapse>
-			<p class="font-monospace small">
-				Consider the following sentence: &ldquo;Mary meditated on the sentence &lsquo;Bill is a good friend&rsquo; and concluded that he was a good friend&rdquo;. It is standardly assumed that in sentences of this sort, containing so‐called &ldquo;closed&rdquo; quotations,
+		<div id="anaphora-quotation" class="collapse">
+			<p class="small border-start ps-3">
+				Consider the following sentence: &ldquo;Mary meditated on the sentence &lsquo;Bill is a good friend&rsquo; and concluded that he was a good friend&rdquo;. It is standardly assumed that in sentences of this sort, containing so-called &ldquo;closed&rdquo; quotations,
 				the expressions occurring between quotation marks are mentioned and do not take their ordinary referents. The quoted NP &ldquo;Bill&rdquo; refers, if anything, to the name &lsquo;Bill&rsquo;, not to the individual Bill. At the same time, the pronoun &ldquo;he&rdquo;,
 				apparently anaphoric on quoted &ldquo;Bill&rdquo;, refers to the individual Bill. The case seems to invalidate the intuitive principle that pronouns anaphoric on referential expressions inherit their reference from their antecedents.
 				The paper formulates the argument, argues that sentences exhibiting the described pattern do not constitute evidence against the intuitive principle, and proposes an alternative account of the anaphoric relation involved.
@@ -432,14 +400,12 @@
 		</div>
 
 		<p>
-			<strong>Phonetic segments and the organization of speech</strong><br>
-			<em>Philosophy of Science</em>, 2019<br>
-			<a data-bs-toggle="collapse" href=#phones-speech aria-expanded="false" role="button" aria-controls=phones-speech>abstract</a> |
-			<a href="https://hal.science/hal-03635414" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1086/701955" target="_blank" rel="noopener">doi</a>
+			Phonetic segments and the organization of speech<br>
+			<span class="text-body-secondary small">Philosophy of Science, 2019</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#phones-speech" aria-expanded="false" role="button" aria-controls="phones-speech">abstract</a> &middot; <a href="https://hal.science/hal-03635414" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1086/701955" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=phones-speech class=collapse>
-			<p class="font-monospace small">
+		<div id="phones-speech" class="collapse">
+			<p class="small border-start ps-3">
 				According to mainstream linguistic phonetics, speech can be modeled as a string of discrete sound segments or &ldquo;phones&rdquo; drawn from a universal phonetic inventory.
 				Recent work has argued that a mature phonetics should refrain from theorizing about speech and speech processing using sound segments, and that the phone concept should be eliminated from linguistic theory.
 				The paper lays out the tenets of the phone methodology and evaluates its prospects in light of the eliminativist arguments.
@@ -448,14 +414,12 @@
 		</div>
 
 		<p>
-			<strong>Priority cosmopsychism and the Advaita Ved&amacr;nta</strong><br>
-			<em>Philosophy East and West</em>, 2019<br>
-			<a data-bs-toggle="collapse" href=#cosmo-advaita aria-expanded="false" role="button" aria-controls=cosmo-advaita>abstract</a> |
-			<a href="https://hal.science/hal-03635422" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1353/pew.2019.0002" target="_blank" rel="noopener">doi</a>
+			Priority cosmopsychism and the Advaita Ved&amacr;nta<br>
+			<span class="text-body-secondary small">Philosophy East and West, 2019</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#cosmo-advaita" aria-expanded="false" role="button" aria-controls="cosmo-advaita">abstract</a> &middot; <a href="https://hal.science/hal-03635422" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1353/pew.2019.0002" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=cosmo-advaita class=collapse>
-			<p class="font-monospace small">
+		<div id="cosmo-advaita" class="collapse">
+			<p class="small border-start ps-3">
 				The combination of panpsychism and priority monism leads to priority cosmopsychism, the view that the consciousness of individual sentient creatures is derivative of an underlying cosmic consciousness.
 				It has been suggested that contemporary priority cosmopsychism parallels central ideas in the Advaita Ved&amacr;nta tradition. The paper offers a critical evaluation of this claim.
 				It argues that the Advaitic account of consciousness cannot be characterized as an instance of priority cosmopsychism, points out the differences between the two views,
@@ -464,28 +428,25 @@
 		</div>
 
 		<p>
-			<strong>Originalism about word types</strong><br>
-			<em>Thought</em>, 2016<br>
-			<a data-bs-toggle="collapse" href=#originalism aria-expanded="false" role="button" aria-controls=originalism>abstract</a> |
-			<a href="https://hal.science/hal-03635418" target="_blank" rel="noopener">hal</a> |
-			<a href="https://doi.org/10.1002/tht3.202" target="_blank" rel="noopener">doi</a>
+			Originalism about word types<br>
+			<span class="text-body-secondary small">Thought, 2016</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#originalism" aria-expanded="false" role="button" aria-controls="originalism">abstract</a> &middot; <a href="https://hal.science/hal-03635418" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1002/tht3.202" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=originalism class=collapse>
-			<p class="font-monospace small">
+		<div id="originalism" class="collapse">
+			<p class="small border-start ps-3">
 				According to originalism, word types are non-eternal continuants which are individuated by their causal-historical lineage and have a unique possible time of origination.
 				This view collides with the intuition that individual words can be added to the lexicon of a language at different times, and generates other problematic consequences.
 				The paper shows that such undesired results can be accommodated without abandoning originalism.
 			</p>
 		</div>
-		
+
 		<p>
-			<strong>Mental files and the lexicon</strong><br>
-			<em>Review of Philosophy and Psychology</em>, 2016<br>
-			<a data-bs-toggle="collapse" href=#ropp1 aria-expanded="false" role="button" aria-controls=ropp1>abstract</a> |
-			<a href="https://doi.org/10.1007/s13164-015-0262-3" target="_blank" rel="noopener">doi</a>
+			Mental files and the lexicon<br>
+			<span class="text-body-secondary small">Review of Philosophy and Psychology, 2016</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#ropp1" aria-expanded="false" role="button" aria-controls="ropp1">abstract</a> &middot; <a href="https://doi.org/10.1007/s13164-015-0262-3" target="_blank" rel="noopener">doi</a></span>
 		</p>
-		<div id=ropp1 class=collapse>
-			<p class="font-monospace small">
+		<div id="ropp1" class="collapse">
+			<p class="small border-start ps-3">
 				This paper presents the hypothesis that the representational repertoire underpinning our ability to process the lexical items of a natural language can be modeled as a system of mental files.
 				To start, I clarify the basic phenomena that an account of lexical knowledge should be able to elucidate.
 				Then, I propose to evaluate whether the mental files theory can be brought to bear on an account of the representational format of lexical knowledge by modeling mental words as recognitional files.
@@ -493,29 +454,26 @@
 		</div>
 
 		<p>
-			<strong>Minimal semantics and word sense disambiguation</strong><br>
-			<em>Disputatio</em>, 2016<br>
-			<a data-bs-toggle="collapse" href=#disp1 aria-expanded="false" role="button" aria-controls=disp1>abstract</a> |
-			<a href="http://www.disputatio.letras.ulisboa.pt/wp-content/uploads/2014/11/Gasparri_Minimal-Semantics-and-Word-Sense-Disambiguation.pdf" target="_blank" rel="noopener">link</a>
+			Minimal semantics and word sense disambiguation<br>
+			<span class="text-body-secondary small">Disputatio, 2016</span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#disp1" aria-expanded="false" role="button" aria-controls="disp1">abstract</a> &middot; <a href="https://www.disputatio.letras.ulisboa.pt/wp-content/uploads/2014/11/Gasparri_Minimal-Semantics-and-Word-Sense-Disambiguation.pdf" target="_blank" rel="noopener">link</a></span>
 		</p>
-		<div id=disp1 class=collapse>
-			<p class="font-monospace small">
+		<div id="disp1" class="collapse">
+			<p class="small border-start ps-3">
 				Emma Borg defines semantic minimalism as the thesis that the literal content of well-formed declarative sentences is truth-evaluable, fully determined by their lexico-syntactic features, and recoverable by language users with no need to access non-linguistic information.
-				The task of this article is threefold. First, I shall raise a criticism to Borg's minimalism based on how speakers disambiguate homonymy.
+				The task of this article is threefold. First, I shall raise a criticism to Borg&rsquo;s minimalism based on how speakers disambiguate homonymy.
 				Second, I will explore some ways Borg might respond to my argument and maintain that none of them offers a conclusive reply to my case.
 				Third, I shall suggest that in order for Borg&rsquo;s minimalism to accommodate the problem discussed in this paper, it should allow for semantically incomplete content and be converted into a claim about linguistic competence.
 			</p>
 		</div>
 
 		<p>
-			<strong>Word meaning</strong><br>
-			<em>Stanford Encyclopedia of Philosophy</em>, 2015&ndash;<br>
-			w/ <a href=https://unito.academia.edu/DiegoMarconi target="_blank" rel="noopener">Diego Marconi</a><br>
-			<a data-bs-toggle="collapse" href=#sep1 aria-expanded="false" role="button" aria-controls=sep1>about</a> |
-			<a href="https://plato.stanford.edu/entries/word-meaning/" target="_blank" rel="noopener">link</a>
+			Word meaning<br>
+			<span class="text-body-secondary small">Stanford Encyclopedia of Philosophy, 2015&ndash; &middot; with <a href="https://www.dfe.unito.it/persone/diego.marconi" target="_blank" rel="noopener">Diego Marconi</a></span><br>
+			<span class="text-body-secondary small"><a data-bs-toggle="collapse" href="#sep1" aria-expanded="false" role="button" aria-controls="sep1">about</a> &middot; <a href="https://plato.stanford.edu/entries/word-meaning/" target="_blank" rel="noopener">link</a></span>
 		</p>
-		<div id=sep1 class=collapse>
-			<p class="font-monospace small">
+		<div id="sep1" class="collapse">
+			<p class="small border-start ps-3">
 				The entry provides an overview of how the issues surrounding the nature of lexical meaning have been explored in analytic philosophy, and a summary of relevant research on the subject in neighboring domains.
 				Though the main focus is on philosophical problems, contributions from linguistics, psychology, neuroscience, and artificial intelligence are also considered.
 			</p>
@@ -533,34 +491,8 @@
 	</div>
 
 	<!-- JavaScript -->
-	<script src="https://lcgasparri.github.io/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script>
-		const themeToggle = document.getElementById('theme-toggle');
-		const themeIcon = document.getElementById('theme-icon');
-	  
-		// Check for saved theme preference or use system preference
-		if (localStorage.getItem('color-mode') === 'dark' ||
-			(!('color-mode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-		  document.documentElement.setAttribute('data-bs-theme', 'dark');
-		  themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
-		} else {
-		  document.documentElement.setAttribute('data-bs-theme', 'light');
-		}
-	  
-		// Toggle theme on button click
-		themeToggle.addEventListener('click', () => {
-		  const currentTheme = document.documentElement.getAttribute('data-bs-theme');
-		  if (currentTheme === 'dark') {
-			document.documentElement.setAttribute('data-bs-theme', 'light');
-			themeIcon.classList.replace('bi-sun-fill', 'bi-moon-fill');
-			localStorage.setItem('color-mode', 'light');
-		  } else {
-			document.documentElement.setAttribute('data-bs-theme', 'dark');
-			themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
-			localStorage.setItem('color-mode', 'dark');
-		  }
-		});
-	</script>
+	<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/theme.js"></script>
 
 </body>
 

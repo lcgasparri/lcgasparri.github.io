@@ -1,34 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en">
 
 <head>
 
 	<title>Misc | Luca Gasparri</title>
 
-	<meta charset=utf-8>
-	<meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name=author content="Luca Gasparri">
-	<meta name=viewport content="width=device-width, initial-scale=1">
-	<link rel="icon" href="https://lcgasparri.github.io/images/lambda.ico">
+	<meta charset="utf-8">
+	<meta name="description" content="Service, refereeing, and memberships of Luca Gasparri, CNRS researcher in philosophy of language">
+	<meta name="author" content="Luca Gasparri">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href="https://lcgasparri.github.io/misc/">
+	<link rel="icon" href="/images/lambda.ico">
+
+	<!-- Theme: applied before first paint. -->
+	<script>
+		(function () {
+			let mode = null;
+			try { mode = localStorage.getItem('color-mode'); } catch (e) {}
+			if (mode !== 'dark' && mode !== 'light') {
+				mode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+			}
+			document.documentElement.setAttribute('data-bs-theme', mode);
+		})();
+	</script>
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="https://lcgasparri.github.io/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
 
 	<!-- Icons -->
-	<link rel="stylesheet" href="https://lcgasparri.github.io/bootstrap/icons/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="/bootstrap/icons/bootstrap-icons.min.css">
 
 </head>
 
 <body>
 
 	<!-- Header -->
-	<nav class="navbar navbar-expand-sm">
+	<nav class="navbar navbar-expand-sm" aria-label="Main">
 		<div class="container pb-2 border-bottom">
 			<!-- Brand and toggle -->
 			<div class="d-flex align-items-center">
-				<a class="navbar-brand me-3">Luca Gasparri</a>
-				<button class="btn btn-link" id="theme-toggle" aria-label="Toggle dark/light mode">
-					<i class="bi bi-moon-fill" id="theme-icon"></i>
+				<a class="navbar-brand me-3" href="/">Luca Gasparri</a>
+				<button class="btn btn-link link-body-emphasis" type="button" id="theme-toggle" aria-label="Switch to dark mode">
+					<i class="bi bi-moon-fill" id="theme-icon" aria-hidden="true"></i>
 				</button>
 			</div>
 
@@ -41,19 +54,19 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/">Home</a>
+						<a class="nav-link" href="/">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/research/">Research</a>
+						<a class="nav-link" href="/research/">Research</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/talks/">Talks</a>
+						<a class="nav-link" href="/talks/">Talks</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Misc</a>
+						<a class="nav-link active" aria-current="page" href="/misc/">Misc</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/contact/">Contact</a>
+						<a class="nav-link" href="/contact/">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -69,104 +82,105 @@
 
 	<!-- Misc -->
 	<div class="container pt-4 pb-4">
-		<h5>
+		<h2 class="h5">
 			Service
-		</h5>
+		</h2>
 		<p>
 			Member of the French National Committee for Scientific Research (<a href="https://www.cnrs.fr/comitenational/" target="_blank" rel="noopener">CoNRS</a>).<br>
-			<a href="https://www.cnrs.fr/comitenational/english/section.php?sec=36" target="_blank" rel="noopener">Section 36</a>, Language sciences (Sept. 2025 - Sept. 2029).
+			<a href="https://www.cnrs.fr/comitenational/english/section.php?sec=36" target="_blank" rel="noopener">Section 36</a>, Language sciences (September 2025&ndash;September 2029).
 		</p>
-		<h5>
+		<h2 class="h5">
 			Refereeing
-		</h5>
+		</h2>
 		<p>
 			I&rsquo;ve reviewed papers, chapters, books, or abstracts for:
-			<ul>
-				<li>Acta Analytica</li>
-				<li>Analysis</li>
-				<li>Biological Reviews</li>
-				<li>Cr&iacute;tica: Revista Hispanoamericana de Filosof&iacute;a</li>
-				<li>Dialectica</li>
-				<li>Erkenntnis</li>
-				<li>European Journal for Philosophy of Religion</li>
-				<li>European Journal of Analytic Philosophy</li>
-				<li>Humana.Mente: Journal of Philosophical Studies</li>
-				<li>Grazer Philosophische Studien</li>
-				<li>Idealistic Studies</li>
-				<li>Inquiry: An Interdisciplinary Journal of Philosophy</li>
-				<li>International Journal of Philosophical Studies</li>
-				<li>Journal of Indian Philosophy</li>
-				<li>Journal of Pragmatics</li>
-				<li>Klesis</li>
-				<li>Lexique</li>
-				<li>Mind</li>
-				<li>Mind &amp; Language</li>
-				<li>Organon F</li>
-				<li>Philosophers&rsquo; Imprint</li>
-				<li>Philosophia</li>
-				<li>Philosophical Quarterly</li>
-				<li>Philosophical Studies</li>
-				<li>Philosophy</li>
-				<li>Philosophy and the Mind Sciences</li>
-				<li>Philosophy and Phenomenological Research</li>
-				<li>Philosophy East and West</li>
-				<li>Philosophy of Science</li>
-				<li>Potsdam Linguistic Investigations</li>
-				<li>Religious Studies</li>
-				<li>Review of Philosophy and Psychology</li>
-				<li>Sistemi Intelligenti</li>
-				<li>Synthese</li>
-				<li>Thought: A Journal of Philosophy</li>
-				<li>Topoi: An International Review of Philosophy</li>
-			</ul>
-			<ul>
-				<li>Bloomsbury Publishing</li>
-				<li>Cambridge University Press</li>
-				<li>Oxford University Press</li>
-			</ul>
-			<ul>
-				<li>
-					Context, Cognition and Communication (<a href="http://ccc-conference.org/" target="_blank" rel="noopener">CCC</a>)
-				</li>
-				<li>
-					Language and Languages at the Crossroad of Disciplines (<a href="https://llcd.cnrs.fr/en/" target="_blank" rel="noopener">LLcD</a>)
-				</li>
-				<li>
-					Paris Syntax and Semantics (<a href="http://www.cssp.cnrs.fr/index_en.html" target="_blank" rel="noopener">CSSP</a>)
-				</li>
-				<li>
-					Logic and Engineering of Natural Language Semantics (<a href="https://lenls.github.io/lenls21/" target="_blank" rel="noopener">LENLS</a>)
-				</li>
-				<li>
-					Congress of the <a href="https://sophaphilo.org/" target="_blank" rel="noopener">SoPhA</a>
-				</li>
-			</ul>
 		</p>
-		<h5>
+		<p class="text-body-secondary small mb-1">Journals</p>
+		<ul class="mb-3" style="columns: 3 14rem; column-gap: 2rem">
+			<li>Acta Analytica</li>
+			<li>Analysis</li>
+			<li>Biological Reviews</li>
+			<li>Cr&iacute;tica: Revista Hispanoamericana de Filosof&iacute;a</li>
+			<li>Dialectica</li>
+			<li>Erkenntnis</li>
+			<li>European Journal for Philosophy of Religion</li>
+			<li>European Journal of Analytic Philosophy</li>
+			<li>Grazer Philosophische Studien</li>
+			<li>Humana.Mente: Journal of Philosophical Studies</li>
+			<li>Idealistic Studies</li>
+			<li>Inquiry: An Interdisciplinary Journal of Philosophy</li>
+			<li>International Journal of Philosophical Studies</li>
+			<li>Journal of Indian Philosophy</li>
+			<li>Journal of Pragmatics</li>
+			<li>Klesis</li>
+			<li>Lexique</li>
+			<li>Mind</li>
+			<li>Mind &amp; Language</li>
+			<li>Organon F</li>
+			<li>Philosophers&rsquo; Imprint</li>
+			<li>Philosophia</li>
+			<li>Philosophical Quarterly</li>
+			<li>Philosophical Studies</li>
+			<li>Philosophy</li>
+			<li>Philosophy and Phenomenological Research</li>
+			<li>Philosophy and the Mind Sciences</li>
+			<li>Philosophy East and West</li>
+			<li>Philosophy of Science</li>
+			<li>Potsdam Linguistic Investigations</li>
+			<li>Religious Studies</li>
+			<li>Review of Philosophy and Psychology</li>
+			<li>Sistemi Intelligenti</li>
+			<li>Synthese</li>
+			<li>Thought: A Journal of Philosophy</li>
+			<li>Topoi: An International Review of Philosophy</li>
+		</ul>
+		<p class="text-body-secondary small mb-1">Publishers</p>
+		<ul class="mb-3">
+			<li>Bloomsbury Publishing</li>
+			<li>Cambridge University Press</li>
+			<li>Oxford University Press</li>
+		</ul>
+		<p class="text-body-secondary small mb-1">Conferences</p>
+		<ul>
+			<li>
+				Context, Cognition and Communication (<a href="https://ccc-conference.org/" target="_blank" rel="noopener">CCC</a>)
+			</li>
+			<li>
+				Language and Languages at the Crossroad of Disciplines (<a href="https://llcd.cnrs.fr/en/" target="_blank" rel="noopener">LLcD</a>)
+			</li>
+			<li>
+				Paris Syntax and Semantics (<a href="http://www.cssp.cnrs.fr/index_en.html" target="_blank" rel="noopener">CSSP</a>)
+			</li>
+			<li>
+				Logic and Engineering of Natural Language Semantics (<a href="https://lenls.github.io/lenls21/" target="_blank" rel="noopener">LENLS</a>)
+			</li>
+			<li>
+				Congress of the <a href="https://sophaphilo.org/" target="_blank" rel="noopener">SoPhA</a>
+			</li>
+		</ul>
+		<h2 class="h5">
 			Membership
-		</h5>
-		<p>
-			<ul>
-				<li>
-					<a href="http://analyticphilosophy.eu/" target="_blank" rel="noopener">European Society for Analytic Philosophy</a>
-				</li>
-				<li>
-					<a href="https://www.aristoteliansociety.org.uk/" target="_blank" rel="noopener">Aristotelian Society</a>
-				</li>
-				<li>
-					<a href="https://alumni-ehess.fr/" target="_blank" rel="noopener">EHESS Alumni Association</a>
-				</li>
-				<li>
-					<a href="https://alumni.harvard.edu/" target="_blank" rel="noopener">Harvard Alumni Association</a>
-				</li>
-				<li>
-					<a href="https://www.humboldt-foundation.de/" target="_blank" rel="noopener">Alumni of the Alexander von Humboldt-Stiftung</a>
-				</li>
-			</ul>
-		</p>
-		<h5>
+		</h2>
+		<ul>
+			<li>
+				<a href="https://analyticphilosophy.eu/" target="_blank" rel="noopener">European Society for Analytic Philosophy</a>
+			</li>
+			<li>
+				<a href="https://www.aristoteliansociety.org.uk/" target="_blank" rel="noopener">Aristotelian Society</a>
+			</li>
+			<li>
+				<a href="https://alumni-ehess.fr/" target="_blank" rel="noopener">EHESS Alumni Association</a>
+			</li>
+			<li>
+				<a href="https://alumni.harvard.edu/" target="_blank" rel="noopener">Harvard Alumni Association</a>
+			</li>
+			<li>
+				<a href="https://www.humboldt-foundation.de/" target="_blank" rel="noopener">Alumni of the Alexander von Humboldt-Stiftung</a>
+			</li>
+		</ul>
+		<h2 class="h5">
 			Varia
-		</h5>
+		</h2>
 		<p>
 			Native speaker of Italian and of a dialect of <a href="https://glottolog.org/resource/languoid/id/lomb1257" target="_blank" rel="noopener">Lombard</a>.<br>
 			English, French, and some German.<br>
@@ -187,34 +201,8 @@
 	</div>
 
 	<!-- JavaScript -->
-	<script src="https://lcgasparri.github.io/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script>
-		const themeToggle = document.getElementById('theme-toggle');
-		const themeIcon = document.getElementById('theme-icon');
-	  
-		// Check for saved theme preference or use system preference
-		if (localStorage.getItem('color-mode') === 'dark' ||
-			(!('color-mode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-		  document.documentElement.setAttribute('data-bs-theme', 'dark');
-		  themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
-		} else {
-		  document.documentElement.setAttribute('data-bs-theme', 'light');
-		}
-	  
-		// Toggle theme on button click
-		themeToggle.addEventListener('click', () => {
-		  const currentTheme = document.documentElement.getAttribute('data-bs-theme');
-		  if (currentTheme === 'dark') {
-			document.documentElement.setAttribute('data-bs-theme', 'light');
-			themeIcon.classList.replace('bi-sun-fill', 'bi-moon-fill');
-			localStorage.setItem('color-mode', 'light');
-		  } else {
-			document.documentElement.setAttribute('data-bs-theme', 'dark');
-			themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
-			localStorage.setItem('color-mode', 'dark');
-		  }
-		});
-	</script>
+	<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/theme.js"></script>
 
 </body>
 

@@ -1,34 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en">
 
 <head>
 
 	<title>Talks | Luca Gasparri</title>
 
-	<meta charset=utf-8>
-	<meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name=author content="Luca Gasparri">
-	<meta name=viewport content="width=device-width, initial-scale=1">
-	<link rel="icon" href="https://lcgasparri.github.io/images/lambda.ico">
+	<meta charset="utf-8">
+	<meta name="description" content="Recent presentations by Luca Gasparri, CNRS researcher in philosophy of language">
+	<meta name="author" content="Luca Gasparri">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href="https://lcgasparri.github.io/talks/">
+	<link rel="icon" href="/images/lambda.ico">
+
+	<!-- Theme: applied before first paint to avoid a flash. The toggle itself lives in /js/theme.js -->
+	<script>
+		(function () {
+			let mode = null;
+			try { mode = localStorage.getItem('color-mode'); } catch (e) {}
+			if (mode !== 'dark' && mode !== 'light') {
+				mode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+			}
+			document.documentElement.setAttribute('data-bs-theme', mode);
+		})();
+	</script>
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="https://lcgasparri.github.io/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
 
 	<!-- Icons -->
-	<link rel="stylesheet" href="https://lcgasparri.github.io/bootstrap/icons/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="/bootstrap/icons/bootstrap-icons.min.css">
 
 </head>
 
 <body>
 
 	<!-- Header -->
-	<nav class="navbar navbar-expand-sm">
+	<nav class="navbar navbar-expand-sm" aria-label="Main">
 		<div class="container pb-2 border-bottom">
 			<!-- Brand and toggle -->
 			<div class="d-flex align-items-center">
-				<a class="navbar-brand me-3">Luca Gasparri</a>
-				<button class="btn btn-link" id="theme-toggle" aria-label="Toggle dark/light mode">
-					<i class="bi bi-moon-fill" id="theme-icon"></i>
+				<a class="navbar-brand me-3" href="/">Luca Gasparri</a>
+				<button class="btn btn-link link-body-emphasis" type="button" id="theme-toggle" aria-label="Switch to dark mode">
+					<i class="bi bi-moon-fill" id="theme-icon" aria-hidden="true"></i>
 				</button>
 			</div>
 
@@ -41,19 +54,19 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/">Home</a>
+						<a class="nav-link" href="/">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/research/">Research</a>
+						<a class="nav-link" href="/research/">Research</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Talks</a>
+						<a class="nav-link active" aria-current="page" href="/talks/">Talks</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/misc/">Misc</a>
+						<a class="nav-link" href="/misc/">Misc</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="https://lcgasparri.github.io/contact/">Contact</a>
+						<a class="nav-link" href="/contact/">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -62,7 +75,7 @@
 
 	<!-- Title -->
 	<div class="container pt-4">
-		<h1 class="display-5 text-center">
+		<h1 class="display-6 text-center">
 			Talks
 		</h1>
 	</div>
@@ -73,39 +86,48 @@
 			Some recent and upcoming presentations.
 		</p>
 		<p>
-			<em>Logic and Engineering of Natural Language Semantics 21</em> (LENLS)<br>
-			November 28<sup>th</sup>&ndash;30<sup>th</sup>, 2025<br>
-			Nagoya, Japan (invited)
+			LINGUAE seminar, Institut Jean Nicod<br>
+			<span class="text-body-secondary small">January 7, 2027 &middot; Paris, France &middot; invited</span>
 		</p>
 		<p>
-			<em>SOPhiA Workshop on the Ontology of Language</em><br>
-			September 4<sup>th</sup>, 2025<br>
-			Salzburg, Austria (invited)
+			OASIS 6<br>
+			<span class="text-body-secondary small">October 13&ndash;16, 2026 &middot; Lisbon, Portugal &middot; invited</span>
 		</p>
 		<p>
-			<em>10<sup>th</sup> Congress of the French Society for Analytic Philosophy</em> (SoPhA)<br>
-			June 30<sup>th</sup>&ndash;July 2<sup>nd</sup>, 2025<br>
-			Nantes, France (refereed)
+			Philosophica II: Words and Language<br>
+			<span class="text-body-secondary small">September 17&ndash;18, 2026 &middot; Lublin, Poland &middot; invited</span>
 		</p>
 		<p>
-			<em>Part-Whole Structure and its Reflection in Natural Language</em><br>
-			January 23<sup>rd</sup>&ndash;24<sup>th</sup>, 2025<br>
-			Nice, France (invited)
+			WIP ERC &ldquo;Mental Files: New Foundations&rdquo;<br>
+			<span class="text-body-secondary small">April 22, 2026 &middot; Paris, France &middot; invited</span>
 		</p>
 		<p>
-			<em>1<sup>st</sup> Baltic Workshop in the Philosophy of Language</em><br>
-			September 16<sup>th</sup>&ndash;19<sup>th</sup>, 2024<br>
-			Krynica Morska, Poland (refereed)
+			Logic and Engineering of Natural Language Semantics 21 (LENLS)<br>
+			<span class="text-body-secondary small">November 28&ndash;30, 2025 &middot; Nagoya, Japan &middot; invited</span>
 		</p>
 		<p>
-			<em>2<sup>nd</sup> Paris Workshop on Games, Decisions, and Language</em><br>
-			June 13<sup>th</sup>&ndash;15<sup>th</sup>, 2024<br>
-			Paris, France (invited)
+			SOPhiA Workshop on the Ontology of Language<br>
+			<span class="text-body-secondary small">September 4, 2025 &middot; Salzburg, Austria &middot; invited</span>
 		</p>
 		<p>
-			<em>Annual Conference of the German Linguistic Society</em> (DGfS)<br>
-			February 28<sup>th</sup>&ndash;March 1<sup>st</sup>, 2024<br>
-			Bochum, Germany (refereed)
+			10th Congress of the French Society for Analytic Philosophy (SoPhA)<br>
+			<span class="text-body-secondary small">June 30&ndash;July 2, 2025 &middot; Nantes, France &middot; refereed</span>
+		</p>
+		<p>
+			Part-Whole Structure and its Reflection in Natural Language<br>
+			<span class="text-body-secondary small">January 23&ndash;24, 2025 &middot; Nice, France &middot; invited</span>
+		</p>
+		<p>
+			1st Baltic Workshop in the Philosophy of Language<br>
+			<span class="text-body-secondary small">September 16&ndash;19, 2024 &middot; Krynica Morska, Poland &middot; refereed</span>
+		</p>
+		<p>
+			2nd Paris Workshop on Games, Decisions, and Language<br>
+			<span class="text-body-secondary small">June 13&ndash;15, 2024 &middot; Paris, France &middot; invited</span>
+		</p>
+		<p>
+			Annual Conference of the German Linguistic Society (DGfS)<br>
+			<span class="text-body-secondary small">February 28&ndash;March 1, 2024 &middot; Bochum, Germany &middot; refereed</span>
 		</p>
 	</div>
 
@@ -119,34 +141,8 @@
 	</div>
 
 	<!-- JavaScript -->
-	<script src="https://lcgasparri.github.io/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script>
-		const themeToggle = document.getElementById('theme-toggle');
-		const themeIcon = document.getElementById('theme-icon');
-	  
-		// Check for saved theme preference or use system preference
-		if (localStorage.getItem('color-mode') === 'dark' ||
-			(!('color-mode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-		  document.documentElement.setAttribute('data-bs-theme', 'dark');
-		  themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
-		} else {
-		  document.documentElement.setAttribute('data-bs-theme', 'light');
-		}
-	  
-		// Toggle theme on button click
-		themeToggle.addEventListener('click', () => {
-		  const currentTheme = document.documentElement.getAttribute('data-bs-theme');
-		  if (currentTheme === 'dark') {
-			document.documentElement.setAttribute('data-bs-theme', 'light');
-			themeIcon.classList.replace('bi-sun-fill', 'bi-moon-fill');
-			localStorage.setItem('color-mode', 'light');
-		  } else {
-			document.documentElement.setAttribute('data-bs-theme', 'dark');
-			themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
-			localStorage.setItem('color-mode', 'dark');
-		  }
-		});
-	</script>
+	<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/theme.js"></script>
 
 </body>
 
