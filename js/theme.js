@@ -3,7 +3,6 @@
 (function () {
 	const root = document.documentElement;
 	const toggle = document.getElementById('theme-toggle');
-	const icon = document.getElementById('theme-icon');
 	const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
 
 	// localStorage can throw when the browser blocks site data; treat that
@@ -26,19 +25,15 @@
 
 	function apply(mode) {
 		root.setAttribute('data-bs-theme', mode);
-		if (icon) {
-			icon.classList.toggle('bi-sun-fill', mode === 'dark');
-			icon.classList.toggle('bi-moon-fill', mode !== 'dark');
-		}
 		if (toggle) {
-			// The icon shows the mode you would switch to; say so for screen readers and in the tooltip.
+			// Name the mode you would switch to, for screen readers and in the tooltip.
 			const label = mode === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
 			toggle.setAttribute('aria-label', label);
 			toggle.setAttribute('title', label);
 		}
 	}
 
-	// Sync the icon with whatever the head snippet already applied.
+	// Sync the label with whatever the head snippet already applied.
 	apply(root.getAttribute('data-bs-theme') === 'dark' ? 'dark' : 'light');
 
 	if (toggle) {
