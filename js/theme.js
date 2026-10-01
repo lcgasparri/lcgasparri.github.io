@@ -24,7 +24,7 @@
 	}
 
 	function apply(mode) {
-		root.setAttribute('data-bs-theme', mode);
+		root.setAttribute('data-theme', mode);
 		if (toggle) {
 			// Name the mode you would switch to, for screen readers and in the tooltip.
 			const label = mode === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
@@ -34,11 +34,11 @@
 	}
 
 	// Sync the label with whatever the head snippet already applied.
-	apply(root.getAttribute('data-bs-theme') === 'dark' ? 'dark' : 'light');
+	apply(root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light');
 
 	if (toggle) {
 		toggle.addEventListener('click', function () {
-			const next = root.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+			const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
 			apply(next);
 			saveMode(next);
 		});

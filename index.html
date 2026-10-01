@@ -21,84 +21,41 @@
 			if (mode !== 'dark' && mode !== 'light') {
 				mode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 			}
-			document.documentElement.setAttribute('data-bs-theme', mode);
+			document.documentElement.setAttribute('data-theme', mode);
 		})();
 	</script>
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-
-	<!-- Icons -->
-	<link rel="stylesheet" href="/bootstrap/icons/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="/css/site.css">
 
 </head>
 
 <body>
 
-	<!-- Header -->
-	<nav class="navbar navbar-expand-sm" aria-label="Main">
-		<div class="container pb-2 border-bottom">
-			<!-- Brand and toggle -->
-			<div class="d-flex align-items-center">
-				<a class="navbar-brand me-3" href="/">Luca Gasparri</a>
-				<button class="btn btn-link link-body-emphasis link-opacity-50 link-opacity-100-hover text-decoration-none p-1" type="button" id="theme-toggle" aria-label="Switch to dark mode">
-					<i class="bi bi-circle-half" aria-hidden="true"></i>
-				</button>
-			</div>
+	<main class="page">
 
-			<!-- Navbar toggler -->
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+		<!-- Header -->
+		<header class="masthead">
+			<h1>Luca Gasparri</h1>
+			<p class="small"><a href="https://hal.science/search/index/q/*/authIdHal_s/luca-gasparri" target="_blank" rel="noopener">HAL</a> &middot; <a href="https://philpeople.org/profiles/luca-gasparri/" target="_blank" rel="noopener">PhilPeople</a> &middot; <a href="#contact">Contact</a></p>
+			<button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+				<svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"/></svg>
 			</button>
+		</header>
 
-			<!-- Navbar links -->
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="/">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/research/">Research</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/talks/">Talks</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/misc/">Misc</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/contact/">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-	<!-- Title -->
-	<div class="container pt-4">
-		<h1 class="display-6 text-center">
-			Home
-		</h1>
-	</div>
-
-	<!-- Home -->
-	<div class="container pt-4 pb-4">
-		<div class="row justify-content-center">
-			<div class="col-xl-3 col-lg-4 col-md-5 col-6">
-				<img src="/images/JA-ap.jpg" class="img-fluid mt-1 mb-4 rounded-circle img-thumbnail" alt="&lsquo;Aperture&rsquo;, by Jason Anderson">
-			</div>
-			<div class="col-xl-9 col-lg-8 col-md-12 col-12">
-				<p class="mt-2">
+		<!-- About -->
+		<section class="section" id="about" aria-labelledby="about-label">
+			<h2 class="label" id="about-label">About</h2>
+			<div class="content">
+				<p>
 					I&rsquo;m a <a href="https://www.cnrs.fr/" target="_blank" rel="noopener">CNRS</a> researcher and a member of the <a href="https://stl.univ-lille.fr/" target="_blank" rel="noopener">STL</a> lab in Lille, France.
 				</p>
 				<p>
 					I work mainly in contemporary philosophy of language.
 				</p>
 				<p>
-					Before joining the CNRS, I held positions as an <a href="https://www.humboldt-foundation.de/en/" target="_blank" rel="noopener">Alexander von Humboldt</a> fellow at the
-					<a href="https://www.geisteswissenschaften.fu-berlin.de/we01/index.html" target="_blank" rel="noopener">Institute of Philosophy</a>,
-					<a href="https://www.fu-berlin.de" target="_blank" rel="noopener">Freie Universit&auml;t Berlin</a>,
-					and as a postdoctoral researcher in the <a href="https://www.philosophie.uzh.ch/de.html" target="_blank" rel="noopener">Department of Philosophy</a> at the <a href="https://www.uzh.ch/de.html" target="_blank" rel="noopener">University of Z&uuml;rich</a>,
+					Before joining the CNRS, I held positions as an <a href="https://www.humboldt-foundation.de/en/" target="_blank" rel="noopener">Alexander von Humboldt</a> fellow at <a href="https://www.fu-berlin.de" target="_blank" rel="noopener">Freie Universit&auml;t Berlin</a>,
+					and as a postdoctoral researcher at the <a href="https://www.uzh.ch/de.html" target="_blank" rel="noopener">University of Z&uuml;rich</a>,
 					where I was also affiliated with the NCCR <a href="https://evolvinglanguage.ch/" target="_blank" rel="noopener">Evolving Language</a>.
 				</p>
 				<p>
@@ -109,30 +66,458 @@
 					and the <a href="https://www.fmsh.fr" target="_blank" rel="noopener">Fondation Maison des Sciences de l&rsquo;Homme</a>.
 				</p>
 				<p>
-					My complete CV and current drafts are available <a href="/contact/">on request</a>.
+					My complete CV and current drafts are available <a href="#contact">on request</a>.
 				</p>
-				<p class="mt-2">
-					NEWS: In December 2026, I will join the <a href="https://institutnicod.ens.psl.eu/" target="_blank" rel="noopener">Institut Jean Nicod</a> at <a href="https://www.ens.psl.eu/" target="_blank" rel="noopener">ENS Paris</a>.
-				</p>
-				<p class="text-body-secondary small">
-					Image: &lsquo;Aperture&rsquo;, by <a href="https://www.instagram.com/jasonandersonart/" target="_blank" rel="noopener">Jason Anderson</a>.
+				<p>
+					<span class="tag">News</span>In December 2026, I will join the <a href="https://institutnicod.ens.psl.eu/" target="_blank" rel="noopener">Institut Jean Nicod</a> at <a href="https://www.ens.psl.eu/" target="_blank" rel="noopener">ENS Paris</a>.
 				</p>
 			</div>
-		</div>
-	</div>
+		</section>
 
-	<!-- Footer -->
-	<div class="container border-top pt-3">
-		<p class="small text-center">
-			<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a> &middot;
-			<a href="https://github.com/lcgasparri/lcgasparri.github.io" target="_blank" rel="noopener">Code</a> &middot;
-			<a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap 5</a>
-		</p>
-	</div>
+		<!-- Research -->
+		<section class="section" id="research" aria-labelledby="research-label">
+			<h2 class="label" id="research-label">Research</h2>
+			<div class="content">
+				<p class="small muted note">&lsquo;hal&rsquo; links to a free-access version on <a href="https://hal.science/" target="_blank" rel="noopener">HAL Open Science</a></p>
+				<div class="entry">
+					<div class="title">Singular generic &lsquo;the&rsquo; and uniqueness</div>
+					<div class="small muted">Proceedings of LENLS 21, in press &middot; with <a href="https://pro.univ-lille.fr/gerhard-schaden/" target="_blank" rel="noopener">Gerhard Schaden</a></div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="sggenthe">abstract</button> &middot; <a href="/docs/sggenthe.pdf" target="_blank" rel="noopener">pdf</a></div>
+					<p class="abstract small" id="sggenthe" hidden>
+						Generic sentences with singular <em>the</em> (GSTs) are standardly assumed to obey the uniqueness presupposition of the &#953;-operator, extended to kinds.
+						We argue that when GSTs are embedded in discourse contexts featuring competing taxonomic satisfiers of the NP, the presuppositional demands of the definite article are not enforced as expected by prominent analyses.
+						We begin by reviewing two major accounts of definite singular generics: Chierchia&rsquo;s (1998) determiner account and Dayal&rsquo;s (2004) NP account. Next, we document the pattern and argue that it is not immediately predicted by either analysis.
+						Finally, we block some natural repair strategies and sketch two possible ways forward:
+						equipping the definite article with a shifter that guards against violations of uniqueness, and predicating GSTs upon a taxonomic property that is by construction uniqueness-compliant.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Words, articulations, and utterance plans</div>
+					<div class="small muted">Philosophy and Phenomenological Research, 2026</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="words-art">abstract</button> &middot; <a href="https://hal.science/hal-05507158" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1111/phpr.70096" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="words-art" hidden>
+						Under what conditions does an externale (a sequence of speech sounds, a mark of ink) qualify as an articulation of a word?
+						Standard approaches to the issue appeal to intentions and to the satisfaction of performance standards, but these treatments are challenged by the intuitive admissibility of unintentional and anomalous tokens.
+						Recently, alternatives appealing to the role of lexical access in word production have been considered, but these, I argue, are threatened by counterexamples of their own.
+						In this paper, I leverage formal and empirical insights into the architecture of utterance production to present a new hypothesis.
+						The main idea is this: for an externale produced by a speaker to qualify as a token of a word, it must originate from the execution of an utterance score that incorporates the local standards over the word&rsquo;s form.
+						I explain how this approach threads the needle between some key desiderata and can accommodate the case studies that challenge its competitors.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Possessive freedom</div>
+					<div class="small muted">In Possession and the Part-Whole Relationship in Language, Oxford UP, in press</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="poss-freedom">abstract</button></div>
+					<p class="abstract small" id="poss-freedom" hidden>
+						Prototypical possessives express relations whose content can be controlled by the discourse context and by the situation of utterance.
+						For instance, while <em>John&rsquo;s nephews</em> is readily taken to denote a set of individuals that stand in the <em>nephew</em> relation with John, given an appropriate context the genitive can felicitously pick out, say, a set of nephews that John has been tasked with supervising during a field trip.
+						Many treatments regard this relational plasticity as a hallmark of possessive status. But what does this freedom of the possessive relation exactly amount to?
+						Peters &amp; Westerst&aring;hl (2013) characterize the property thus: &ldquo;Every possessive DP can be used in a sentence S in a context where that DP&rsquo;s possessive relation is none of the options provided semantically by S but instead comes somehow from the context in which the sentence is used.&rdquo;
+						I offer an argument that a suitably disambiguated reading of this characterization licenses in turn two distinct readings, and that there is a non-trivial choice to make over which of these readings is preferable.
+						Along the way, I comment on some broader aspects of the demarcation between genuine possessives and their lookalikes, distinguish the freedom of the possessive from similar properties that may be confused with it, and rectify some, I believe, less-than-perfectly-helpful observations about the pragmatic malleability of possessives in the theoretical landscape.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Predicate nominals and essentializing inferences</div>
+					<div class="small muted">Synthese, 2026 &middot; with <a href="https://pro.univ-lille.fr/gerhard-schaden/" target="_blank" rel="noopener">Gerhard Schaden</a></div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="essent">abstract</button> &middot; <a href="https://hal.science/hal-05615855" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1007/s11229-026-05584-z" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="essent" hidden>
+						Several studies argue that predicate nominals are prone to essentialize: they trigger inferences that the entities to which they are applied belong to robust and homogeneous categories with stable, explanatory membership conditions.
+						But how consistent is this propensity?
+						We present evidence that although predicate nominals are indeed prone to essentialize, they do so variably, and that the spectrum includes predicate nominals and predicate-nominal types whose essentializing potential is indistinguishable from that of competing non-nominal formations.
+						The observed infra-categorical variation frequently tracks identifiable grammatical parameters, such as the semantic type of the nominal, its episodic status, and the syntactic format of the predicative phrase.
+						We argue that this opens new opportunities for inquiry into the linguistic underpinnings of essentializing inferences.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Animal metasemantics</div>
+					<div class="small muted">Biology &amp; Philosophy, 2025</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="animal-meta">abstract</button> &middot; <a href="https://hal.science/hal-05264543" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1007/s10539-025-09993-1" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="animal-meta" hidden>
+						Multiple scholars in animal communication research have proposed that models of animal signals should appropriate theoretical terminology and concepts from natural language semantics.
+						However, the application of semantic descriptors to nonhuman communication is a delicate undertaking.
+						The goal of this paper is to consider whether there are any basic methodological principles that can help us determine whether the appropriation of a semantic descriptor by an animal model is justified or unwarranted.
+						I begin by drawing a parallel between types of theories of meaning and types of theories of signal content, and propose to categorize the metatheoretical issues surrounding the application of semantic descriptors to animal signals under the banner of an animal metasemantics.
+						I then develop three simple conditions on the operation: a condition of epistemic fertility, one of intensional depth, and one of grammatical congruity.
+						Finally, I showcase how these heuristics can assist theory production and help identify strengths and opportunities for improvement in emerging projects in animal linguistics.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Slurring without nouns</div>
+					<div class="small muted">Topoi, 2025 &middot; with <a href="https://pro.univ-lille.fr/gerhard-schaden/" target="_blank" rel="noopener">Gerhard Schaden</a></div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="slurs-nouns">abstract</button> &middot; <a href="https://hal.science/hal-05048819" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1007/s11245-025-10186-4" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="slurs-nouns" hidden>
+						When we think of slurs in English &ndash; like the N-word, the F-word, and others &ndash; we tend to think of nouns rather than verbs or adjectives.
+						This is probably not an accident: paradigm examples of slurs are indeed nominal in nature, and slurs exhibit a cross-linguistically robust tendency to concentrate in the grammatical class of nouns. But why?
+						Recent work appears to suggest that the distributional predominance of nominal slurs is due to the fact that the offensiveness characteristic of slurs is downstream from the inferential biases associated with nominals and their predicative uses.
+						We begin with describing this hypothesis, rehearsing the considerations in its favor, and clarifying its predictions.
+						Next, we present cross-linguistic data from Italian and German indicating the need for a more nuanced picture of the distributional pattern. Finally, we make our proposal.
+						We suggest that slur-level offensiveness is a class-insensitive achievement, yet slurs are often nouns because membership in the grammatical class of nouns is functionally conducive to higher derogatory potency.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Bare singular names and genericity</div>
+					<div class="small muted">Journal of Semantics, 2024</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="bare-names-generics">abstract</button> &middot; <a href="https://hal.science/hal-04791894" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1093/jos/ffae017" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="bare-names-generics" hidden>
+						Predicativists hold that proper names are count nouns with a predicative meaning, and treat bare singular names as predicative DPs headed by an unpronounced definite.
+						However, bare singular names exhibit differences in grammatical behavior from ordinary definite singulars.
+						One difference, it has been argued, is that while ordinary definite singulars can be interpreted generically, bare singular names cannot.
+						This is not right: bare singular names can have generic uses.
+						I present the evidence and offer an argument that generics with bare singular names are good news for predicativists.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Meaning change you can make</div>
+					<div class="small muted">Synthese, 2024</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="meaning-change">abstract</button> &middot; <a href="https://hal.science/hal-04589410" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1007/s11229-024-04604-0" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="meaning-change" hidden>
+						Standard metasemantic frameworks render word meanings resistant to the control of ordinary speakers, and hinder our ability to exercise sovereignty over the denotations of words.
+						The literature suggests three main responses to the problem: views on which ordinary denotational interventions cannot cause changes to semantic reality,
+						views on which we should drop the metasemantic premises that generate the difficulty, and views on which denotational interventions boil down to operations on a non-recalcitrant region of the semantic spectrum.
+						I review these responses and argue that they face difficulties.
+						Then, I draw on linguistic work on variation to make an alternative proposal.
+						I suggest that part of the problem hinges on a tendency to think about standing meanings under heavily idealized assumptions of intra-linguistic homogeneity.
+						To amend this, we should consider endorsing a localist ontology for semantic properties that allows individual vocabulary items to bear variable standing meanings at different communities of speakers of a public language.
+						The result, I argue, is a middle-ground framework which accepts the difficulties of wide-scope meaning change while granting speakers semantic self-determination, and strikes an attractive balance between a few central desiderata.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Inherent and probabilistic naturalness</div>
+					<div class="small muted">Philosophical Studies, 2024</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="natural-conventions">abstract</button> &middot; <a href="https://hal.science/hal-04268871" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1007/s11098-023-02070-x" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="natural-conventions" hidden>
+						Standard accounts hold that regularities of behavior must be arbitrary to constitute a convention.
+						Yet, there is growing consensus that conventionality is a graded phenomenon, and that conventions can be more or less natural.
+						I develop an account of natural conventions that distinguishes two basic dimensions of conventional naturalness: a probabilistic dimension and an inherent one.
+						A convention is probabilistically natural if it is likely to emerge in a population of agents, and inherently natural if its content is a regularity that scores high on relevant measures for naturalness.
+						I motivate the proposal on conceptual grounds and then showcase its descriptive benefits by discussing two case studies in language:
+						the tendency towards word-length optimality and the prevalence of shape opacity in spoken language vocabularies.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">The first words ever spoken</div>
+					<div class="small muted">Synthese, 2023</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="first-word">abstract</button> &middot; <a href="https://hal.science/hal-04100213" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1007/s11229-023-04166-7" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="first-word" hidden>
+						I argue that ontologies of words should engage with the emergence of lexical communication in the deep history of our line.
+						It may seem that the evolutionary origins of words are orthogonal to the analytical project of establishing the defining features of wordhood, and that an adequate ontology of words requires nothing more than an observation of the properties of modern languages.
+						I suggest instead that models of the initial stages of language evolution can offer valuable insights into the matter.
+						There is consensus that lexical communication was an early achievement in the phylogeny of our language capacities, and that words became available to our ancestors before the maturation of other components of the grammar.
+						At the beginning of their evolutionary trajectory, words are thus likely to have been significantly different from the vocabulary items of contemporary languages.
+						Careful appreciation of such differences could be instrumental to a complete theory of the hallmarks of wordhood.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Lexical innovation and the periphery of language</div>
+					<div class="small muted">Linguistics and Philosophy, 2022</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="lexical-innovation">abstract</button> &middot; <a href="https://hal.science/hal-03635391v1" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1007/s10988-020-09319-2" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="lexical-innovation" hidden>
+						Lexical innovations (e.g., zero-derivations coined on the fly by a speaker) seem to bear semantic content.
+						Yet, such expressions cannot bear semantic content as a function of the conventions of meaning in force in the language, since they are not part of its lexicon.
+						This is in tension with the commonplace view that the semantic content of lexical expressions is constituted by semantic conventions.
+						The conventionalist has two immediate ways out of the tension.
+						The first is to preserve the conventionalist assumption and deny that lexical innovations bear semantic content.
+						The second is to dynamize the conventionalist assumption, that is, argue that presentations of unattested expressions trigger an augmentation of the standing semantic resources of the language and instantiate semantic content as a result of this underlying update.
+						Building on a comparison with the production of novel onomatopoeic words, iconic pseudowords and pro-speech gestures,
+						the paper argues that the issue is best addressed by suspending the conventionalist assumption, and describes the immediate metasemantic implications of the claim.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Notions of arbitrariness</div>
+					<div class="small muted">Mind &amp; Language, 2022 &middot; with <a href="https://pierafilip.wixsite.com/pierafilippi" target="_blank" rel="noopener">Piera Filippi</a> et al.</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="notions-arbitrariness">abstract</button> &middot; <a href="https://hal.science/hal-03831380" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1111/mila.12443" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="notions-arbitrariness" hidden>
+						Arbitrariness is a distinctive feature of human language, and a growing body of comparative work is investigating its presence in animal communication. But what is arbitrariness, exactly?
+						We propose to distinguish four notions of semiotic arbitrariness:
+						a notion of opaque association between sign forms and semiotic functions, one of sign-function mapping optionality, one of acquisition-dependent sign-function coupling, and one of lack of motivatedness.
+						We characterize these notions, illustrate the benefits of keeping them apart, and describe two reactions to our proposal:
+						abandoning arbitrariness-talk in favor of the newly introduced conceptual vocabulary, or feeding the distinctions back into the parent concept.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Optionality in animal communication</div>
+					<div class="small muted">Biological Reviews, 2022 &middot; with <a href="https://stuartkwatson.wordpress.com/" target="_blank" rel="noopener">Stuart K. Watson</a> et al.</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="optionality-animals">abstract</button> &middot; <a href="https://hal.science/hal-03745755" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1111/brv.12882" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="optionality-animals" hidden>
+						A critical feature of language is that the form of words need not bear any perceptual similarity to their function &ndash; these relationships can be &ldquo;arbitrary&rdquo;.
+						The capacity to process these arbitrary form-function associations facilitates the enormous expressive power of language.
+						However, the evolutionary roots of our capacity for arbitrariness, i.e. the extent to which related abilities may be shared with animals, is largely unexamined.
+						We argue this is due to the challenges of applying such an intrinsically linguistic concept to animal communication, and address this by proposing a novel conceptual framework highlighting a key underpinning of linguistic arbitrariness, which is nevertheless applicable to non-human species.
+						Specifically, we focus on the capacity to associate alternative functions with a signal, or alternative signals with a function, a feature we refer to as optionality.
+						We apply this framework to a broad survey of findings from animal communication studies and identify five key dimensions of communicative optionality: signal production, signal adjustment, signal usage, signal combinatoriality and signal perception.
+						We find that optionality is widespread in non-human animals across each of these dimensions, although only humans demonstrate it in all five.
+						Finally, we discuss the relevance of optionality to behavioural and cognitive domains outside of communication.
+						This investigation provides a powerful new conceptual framework for the cross-species investigation of the origins of arbitrariness, and promises to generate original insights into animal communication and language evolution more generally.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">&#346;a&#7749;karan monism and the limits of thought</div>
+					<div class="small muted">The Monist, 2022</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="sankaran-monism">abstract</button> &middot; <a href="https://hal.science/hal-03635381" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1093/monist/onab024" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="sankaran-monism" hidden>
+						A growing movement in contemporary philosophy of mind is looking back on Indian thought to gain new insights into the problem of consciousness.
+						This paper weighs the prospects of thinking about mentality through the lenses of &#346;a&#7749;karan Advaita Ved&amacr;nta.
+						To start, I outline micropsychist and cosmopsychist accounts of consciousness, introduce &#346;a&#7749;karan monism, and describe a potential reason of attraction of the framework over micropsychist and cosmopsychist alternatives.
+						I then show that the eliminativist commitments of the view threaten to yield a self-defeating account of ordinary experience, and that Advaitins took the accommodation of the issue to be beyond the reach of rational inquiry.
+						Finally, I discuss how the analytical debate over &#346;a&#7749;karan monism might proceed based on these premises.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Proportional dispositional predicates</div>
+					<div class="small muted">Synthese, 2021</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="proportions-dispositions">abstract</button> &middot; <a href="https://hal.science/hal-03635360" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1007/s11229-021-03336-9" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="proportions-dispositions" hidden>
+						Ordinary disposition ascriptions (DAs) appear to form a semantically heterogeneous class of clauses some of which can be straightforwardly analyzed as possibility claims, and some of which resist a simple quantificational treatment.
+						For example, while &ldquo;The block is breakable&rdquo; is true if the block breaks at a relevant possible world, for &ldquo;The block is fragile&rdquo; to be true it doesn&rsquo;t suffice that the block breaks at one of the worlds that matter to the evaluation of the ascription, since the block could break accidentally and yet be sturdy.
+						The contrast has been taken to indicate that sentences like &ldquo;The block is fragile&rdquo; don&rsquo;t introduce mere existential quantification over sets of worlds, and should be represented as claims about sufficient ratios or proportions of worlds.
+						However, recent work has suggested that by pairing the recalcitrant DAs with modified manifestation phrases, we can generalize the standard analysis of existential DAs to the problematic examples, and state a uniform characterization of DAs as claims of possibility.
+						The paper discusses some counterexamples to the view that allegedly non-existential DAs are covert claims of fine-grained possibility, and sketches a hybrid account combining proportional quantification with fine-grained manifestations.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Semantic supervenience</div>
+					<div class="small muted">Inquiry, 2021</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="semantic-supervenience">abstract</button> &middot; <a href="https://hal.science/hal-03635386" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1080/0020174X.2021.1930579" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="semantic-supervenience" hidden>
+						It is common belief that semantic properties supervene on non-semantic properties: no two possible worlds can be non-semantic duplicates and fail to be semantic duplicates.
+						The view enjoys somewhat of an orthodoxy status in contemporary philosophy of language and metaphysics, and is often assumed without argument.
+						Yet, work by Stephen Kearns and Ofra Magidor has claimed that it is vulnerable to a variant of the classical arguments against the supervenience of the phenomenal on the physical.
+						This paper does three things: it clarifies what semantic supervenience is about, it responds to the objections that have been leveled against it, and provides a new battery of arguments in its favor.
+						I argue that the thesis of semantic supervenience is safe from classical anti-supervenience arguments, and show that its rejection generates unwelcome consequences.
+						I conclude that there are substantial reasons to embrace the received wisdom: semantic properties supervene.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Hearing meanings: the revenge of context</div>
+					<div class="small muted">Synthese, 2021 &middot; with <a href="https://www.caphi-philo.fr/user/michael.murezuniv-nantes-fr/" target="_blank" rel="noopener">Michael Murez</a></div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="hearing-meanings">abstract</button> &middot; <a href="https://hal.science/hal-03281849" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1007/s11229-019-02398-0" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="hearing-meanings" hidden>
+						According to the perceptual view of language comprehension, listeners typically recover high-level linguistic properties such as utterance meaning without inferential work.
+						The perceptual view is subject to the Objection from Context: since utterance meaning is massively context-sensitive, and context-sensitivity requires cognitive inference, the perceptual view is false.
+						In recent work, Berit Brogaard provides a challenging reply to this objection. She argues that in language comprehension context-sensitivity is typically exercised not through inferences, but rather through top-down perceptual modulations or perceptual learning.
+						This paper provides a complete formulation of the Objection from Context and evaluates Brogaard&rsquo;s reply to it. Drawing on conceptual considerations and empirical examples,
+						we argue that the exercise of context-sensitivity in language comprehension does, in fact, typically involve inference.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">A pluralistic theory of wordhood</div>
+					<div class="small muted">Mind &amp; Language, 2020</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="pluralism-words">abstract</button> &middot; <a href="https://hal.science/hal-03635397" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1111/mila.12297" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="pluralism-words" hidden>
+						What are words and how should we individuate them? There are two main answers on the philosophical market. For some, words are bundles of structural-functional features defining a unique performance profile.
+						For others, words are noneternal continuants individuated by their causal-historical ancestry. These conceptions offer competing views of the nature of words, and it seems natural to assume that at most one of them can capture the essence of wordhood.
+						This paper makes a case for pluralism about wordhood: the view that there is a plurality of acceptable conceptions of the nature of words, none of which is uniquely entitled to inform us as to what wordhood consists in.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">A numeral oddity</div>
+					<div class="small muted">Journal of Semantics, 2019</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="numeral-oddity">abstract</button> &middot; <a href="https://hal.science/hal-03635403" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1093/jos/ffz006" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="numeral-oddity" hidden>
+						Natural language appears to allow the ascription of properties of numeral symbols to the denotation of number referring phrases.
+						The paper describes the phenomenon and presents two alternative explanations for why it obtains. One combining an intuitive semantics for number referring phrases and a predicate-shifting mechanism,
+						the other assigning number referring phrases a structured denotation consisting of two parts: a mathematical object (the number) and a contextually determined numeral symbol.
+						Some preliminary observations in favor of the second analysis are offered.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Pronominal anaphora, coreference, and closed quotation marks</div>
+					<div class="small muted">Mind &amp; Language, 2019</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="anaphora-quotation">abstract</button> &middot; <a href="https://hal.science/hal-03635408" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1111/mila.12213" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="anaphora-quotation" hidden>
+						Consider the following sentence: &ldquo;Mary meditated on the sentence &lsquo;Bill is a good friend&rsquo; and concluded that he was a good friend&rdquo;. It is standardly assumed that in sentences of this sort, containing so-called &ldquo;closed&rdquo; quotations,
+						the expressions occurring between quotation marks are mentioned and do not take their ordinary referents. The quoted NP &ldquo;Bill&rdquo; refers, if anything, to the name &lsquo;Bill&rsquo;, not to the individual Bill. At the same time, the pronoun &ldquo;he&rdquo;,
+						apparently anaphoric on quoted &ldquo;Bill&rdquo;, refers to the individual Bill. The case seems to invalidate the intuitive principle that pronouns anaphoric on referential expressions inherit their reference from their antecedents.
+						The paper formulates the argument, argues that sentences exhibiting the described pattern do not constitute evidence against the intuitive principle, and proposes an alternative account of the anaphoric relation involved.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Phonetic segments and the organization of speech</div>
+					<div class="small muted">Philosophy of Science, 2019</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="phones-speech">abstract</button> &middot; <a href="https://hal.science/hal-03635414" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1086/701955" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="phones-speech" hidden>
+						According to mainstream linguistic phonetics, speech can be modeled as a string of discrete sound segments or &ldquo;phones&rdquo; drawn from a universal phonetic inventory.
+						Recent work has argued that a mature phonetics should refrain from theorizing about speech and speech processing using sound segments, and that the phone concept should be eliminated from linguistic theory.
+						The paper lays out the tenets of the phone methodology and evaluates its prospects in light of the eliminativist arguments.
+						I claim that the eliminativist arguments fail to show that the phone concept should be eliminated from linguistic theory.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Priority cosmopsychism and the Advaita Ved&amacr;nta</div>
+					<div class="small muted">Philosophy East and West, 2019</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="cosmo-advaita">abstract</button> &middot; <a href="https://hal.science/hal-03635422" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1353/pew.2019.0002" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="cosmo-advaita" hidden>
+						The combination of panpsychism and priority monism leads to priority cosmopsychism, the view that the consciousness of individual sentient creatures is derivative of an underlying cosmic consciousness.
+						It has been suggested that contemporary priority cosmopsychism parallels central ideas in the Advaita Ved&amacr;nta tradition. The paper offers a critical evaluation of this claim.
+						It argues that the Advaitic account of consciousness cannot be characterized as an instance of priority cosmopsychism, points out the differences between the two views,
+						and suggests an alternative positioning of the Advaitic canon within the contemporary debate on monism and panpsychism.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Originalism about word types</div>
+					<div class="small muted">Thought, 2016</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="originalism">abstract</button> &middot; <a href="https://hal.science/hal-03635418" target="_blank" rel="noopener">hal</a> &middot; <a href="https://doi.org/10.1002/tht3.202" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="originalism" hidden>
+						According to originalism, word types are non-eternal continuants which are individuated by their causal-historical lineage and have a unique possible time of origination.
+						This view collides with the intuition that individual words can be added to the lexicon of a language at different times, and generates other problematic consequences.
+						The paper shows that such undesired results can be accommodated without abandoning originalism.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Mental files and the lexicon</div>
+					<div class="small muted">Review of Philosophy and Psychology, 2016</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="ropp1">abstract</button> &middot; <a href="https://doi.org/10.1007/s13164-015-0262-3" target="_blank" rel="noopener">doi</a></div>
+					<p class="abstract small" id="ropp1" hidden>
+						This paper presents the hypothesis that the representational repertoire underpinning our ability to process the lexical items of a natural language can be modeled as a system of mental files.
+						To start, I clarify the basic phenomena that an account of lexical knowledge should be able to elucidate.
+						Then, I propose to evaluate whether the mental files theory can be brought to bear on an account of the representational format of lexical knowledge by modeling mental words as recognitional files.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Minimal semantics and word sense disambiguation</div>
+					<div class="small muted">Disputatio, 2016</div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="disp1">abstract</button> &middot; <a href="https://www.disputatio.letras.ulisboa.pt/wp-content/uploads/2014/11/Gasparri_Minimal-Semantics-and-Word-Sense-Disambiguation.pdf" target="_blank" rel="noopener">link</a></div>
+					<p class="abstract small" id="disp1" hidden>
+						Emma Borg defines semantic minimalism as the thesis that the literal content of well-formed declarative sentences is truth-evaluable, fully determined by their lexico-syntactic features, and recoverable by language users with no need to access non-linguistic information.
+						The task of this article is threefold. First, I shall raise a criticism to Borg&rsquo;s minimalism based on how speakers disambiguate homonymy.
+						Second, I will explore some ways Borg might respond to my argument and maintain that none of them offers a conclusive reply to my case.
+						Third, I shall suggest that in order for Borg&rsquo;s minimalism to accommodate the problem discussed in this paper, it should allow for semantically incomplete content and be converted into a claim about linguistic competence.
+					</p>
+				</div>
+				<div class="entry">
+					<div class="title">Word meaning</div>
+					<div class="small muted">Stanford Encyclopedia of Philosophy, 2015&ndash; &middot; with <a href="https://www.dfe.unito.it/persone/diego.marconi" target="_blank" rel="noopener">Diego Marconi</a></div>
+					<div class="small muted"><button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="sep1">about</button> &middot; <a href="https://plato.stanford.edu/entries/word-meaning/" target="_blank" rel="noopener">link</a></div>
+					<p class="abstract small" id="sep1" hidden>
+						The entry provides an overview of how the issues surrounding the nature of lexical meaning have been explored in analytic philosophy, and a summary of relevant research on the subject in neighboring domains.
+						Though the main focus is on philosophical problems, contributions from linguistics, psychology, neuroscience, and artificial intelligence are also considered.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Talks -->
+		<section class="section" id="talks" aria-labelledby="talks-label">
+			<h2 class="label" id="talks-label">Talks</h2>
+			<div class="content">
+				<div class="talk">
+					<time class="small muted" datetime="2027-01-07">Jan 2027</time>
+					<div><span class="title">LINGUAE seminar, Institut Jean Nicod</span><br><span class="small muted">Paris, France &middot; invited</span></div>
+				</div>
+				<div class="talk">
+					<time class="small muted" datetime="2026-10-13">Oct 2026</time>
+					<div><span class="title">OASIS 6</span><br><span class="small muted">Lisbon, Portugal &middot; invited tutorial</span></div>
+				</div>
+				<div class="talk">
+					<time class="small muted" datetime="2026-09-17">Sep 2026</time>
+					<div><span class="title">Philosophica II: Words and Language</span><br><span class="small muted">Lublin, Poland &middot; invited</span></div>
+				</div>
+				<div class="talk">
+					<time class="small muted" datetime="2026-04-22">Apr 2026</time>
+					<div><span class="title">WIP ERC &ldquo;Mental Files: New Foundations&rdquo;</span><br><span class="small muted">Paris, France &middot; invited</span></div>
+				</div>
+				<div class="talk">
+					<time class="small muted" datetime="2025-11-28">Nov 2025</time>
+					<div><span class="title">LENLS 21</span><br><span class="small muted">Nagoya, Japan &middot; invited</span></div>
+				</div>
+				<div class="talk">
+					<time class="small muted" datetime="2025-09-04">Sep 2025</time>
+					<div><span class="title">SOPhiA Workshop on the Ontology of Language</span><br><span class="small muted">Salzburg, Austria &middot; invited</span></div>
+				</div>
+				<div class="talk">
+					<time class="small muted" datetime="2025-06-30">Jun 2025</time>
+					<div><span class="title">10th Congress of the French Society for Analytic Philosophy</span><br><span class="small muted">Nantes, France &middot; refereed</span></div>
+				</div>
+				<div class="talk">
+					<time class="small muted" datetime="2025-01-23">Jan 2025</time>
+					<div><span class="title">Part-Whole Structure and its Reflection in Natural Language</span><br><span class="small muted">Nice, France &middot; invited</span></div>
+				</div>
+				<div class="talk">
+					<time class="small muted" datetime="2024-09-16">Sep 2024</time>
+					<div><span class="title">1st Baltic Workshop in the Philosophy of Language</span><br><span class="small muted">Krynica Morska, Poland &middot; refereed</span></div>
+				</div>
+				<div class="talk">
+					<time class="small muted" datetime="2024-06-13">Jun 2024</time>
+					<div><span class="title">2nd Paris Workshop on Games, Decisions, and Language</span><br><span class="small muted">Paris, France &middot; invited</span></div>
+				</div>
+				<div class="talk">
+					<time class="small muted" datetime="2024-02-28">Feb 2024</time>
+					<div><span class="title">Annual Conference of the German Linguistic Society (DGfS)</span><br><span class="small muted">Bochum, Germany &middot; refereed</span></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Service -->
+		<section class="section" id="service" aria-labelledby="service-label">
+			<h2 class="label" id="service-label">Service</h2>
+			<div class="content">
+				<p>
+					Member of the French National Committee for Scientific Research (<a href="https://www.cnrs.fr/comitenational/" target="_blank" rel="noopener">CoNRS</a>).<br>
+					<a href="https://www.cnrs.fr/comitenational/english/section.php?sec=36" target="_blank" rel="noopener">Section 36</a>, Language sciences (September 2025&ndash;September 2029).
+				</p>
+				<h3>Refereeing</h3>
+				<p class="small muted group">Journals</p>
+				<p class="small list"><span class="nowrap">Acta Analytica</span>, <span class="nowrap">Analysis</span>, <span class="nowrap">Biological Reviews</span>, <span class="nowrap">Cr&iacute;tica: Revista Hispanoamericana de Filosof&iacute;a</span>, <span class="nowrap">Dialectica</span>, <span class="nowrap">Erkenntnis</span>, <span class="nowrap">European Journal for Philosophy of Religion</span>, <span class="nowrap">European Journal of Analytic Philosophy</span>, <span class="nowrap">Grazer Philosophische Studien</span>, <span class="nowrap">Humana.Mente: Journal of Philosophical Studies</span>, <span class="nowrap">Idealistic Studies</span>, <span class="nowrap">Inquiry: An Interdisciplinary Journal of Philosophy</span>, <span class="nowrap">International Journal of Philosophical Studies</span>, <span class="nowrap">Journal of Indian Philosophy</span>, <span class="nowrap">Journal of Pragmatics</span>, <span class="nowrap">Klesis</span>, <span class="nowrap">Lexique</span>, <span class="nowrap">Mind</span>, <span class="nowrap">Mind &amp; Language</span>, <span class="nowrap">Organon F</span>, <span class="nowrap">Philosophers&rsquo; Imprint</span>, <span class="nowrap">Philosophia</span>, <span class="nowrap">Philosophical Quarterly</span>, <span class="nowrap">Philosophical Studies</span>, <span class="nowrap">Philosophy</span>, <span class="nowrap">Philosophy and Phenomenological Research</span>, <span class="nowrap">Philosophy and the Mind Sciences</span>, <span class="nowrap">Philosophy East and West</span>, <span class="nowrap">Philosophy of Science</span>, <span class="nowrap">Potsdam Linguistic Investigations</span>, <span class="nowrap">Religious Studies</span>, <span class="nowrap">Review of Philosophy and Psychology</span>, <span class="nowrap">Sistemi Intelligenti</span>, <span class="nowrap">Synthese</span>, <span class="nowrap">Thought: A Journal of Philosophy</span>, <span class="nowrap">Topoi: An International Review of Philosophy</span>.</p>
+				<p class="small muted group">Publishers</p>
+				<p class="small list"><span class="nowrap">Bloomsbury Publishing</span>, <span class="nowrap">Cambridge University Press</span>, <span class="nowrap">Oxford University Press</span>.</p>
+				<p class="small muted group">Conferences</p>
+				<p class="small list"><span class="nowrap">Context, Cognition and Communication (<a href="https://ccc-conference.org/" target="_blank" rel="noopener">CCC</a>)</span>; <span class="nowrap">Language and Languages at the Crossroad of Disciplines (<a href="https://llcd.cnrs.fr/en/" target="_blank" rel="noopener">LLcD</a>)</span>; <span class="nowrap">Paris Syntax and Semantics (<a href="http://www.cssp.cnrs.fr/index_en.html" target="_blank" rel="noopener">CSSP</a>)</span>; <span class="nowrap">Logic and Engineering of Natural Language Semantics (<a href="https://lenls.github.io/lenls21/" target="_blank" rel="noopener">LENLS</a>)</span>; <span class="nowrap">Congress of the <a href="https://sophaphilo.org/" target="_blank" rel="noopener">SoPhA</a></span>.</p>
+				<h3>Membership</h3>
+				<p class="small list"><span class="nowrap"><a href="https://analyticphilosophy.eu/" target="_blank" rel="noopener">European Society for Analytic Philosophy</a></span> &middot; <span class="nowrap"><a href="https://www.aristoteliansociety.org.uk/" target="_blank" rel="noopener">Aristotelian Society</a></span> &middot; <span class="nowrap"><a href="https://alumni-ehess.fr/" target="_blank" rel="noopener">EHESS Alumni Association</a></span> &middot; <span class="nowrap"><a href="https://alumni.harvard.edu/" target="_blank" rel="noopener">Harvard Alumni Association</a></span> &middot; <span class="nowrap"><a href="https://www.humboldt-foundation.de/" target="_blank" rel="noopener">Alumni of the Alexander von Humboldt-Stiftung</a></span></p>
+			</div>
+		</section>
+
+		<!-- Varia -->
+		<section class="section" id="varia" aria-labelledby="varia-label">
+			<h2 class="label" id="varia-label">Varia</h2>
+			<div class="content">
+				<p>
+					Native speaker of Italian and of a dialect of <a href="https://glottolog.org/resource/languoid/id/lomb1257" target="_blank" rel="noopener">Lombard</a>.<br>
+					English, French, and some German.<br>
+					Latin and Ancient Greek.
+				</p>
+				<p>
+					First-gen university student.
+				</p>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section class="section" id="contact" aria-labelledby="contact-label">
+			<h2 class="label" id="contact-label">Contact</h2>
+			<div class="content">
+				<dl class="contact">
+					<dt>Email</dt>
+					<dd><span class="mono">&lt;myfirstname&gt;.&lt;mylastname&gt;&#64;cnrs.fr</span></dd>
+					<dt>Address</dt>
+					<dd>
+						<address>
+							STL, UMR CNRS 8163, Universit&eacute; de Lille<br>
+							Domaine du Pont de Bois, Rue du Barreau<br>
+							59650 Villeneuve d&rsquo;Ascq, FRANCE
+						</address>
+					</dd>
+					<dt>Office</dt>
+					<dd>
+						B&acirc;timent B, Bureau B1.681<br>
+						<a href="https://osm.org/go/0EgKg5QXP-?m=" target="_blank" rel="noopener">openstreetmap</a> &middot;
+						<a href="https://masalle.univ-lille.fr/resultat?numsalle=B1.681" target="_blank" rel="noopener">campus map</a>
+					</dd>
+				</dl>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer small">
+			<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a> &middot; <a href="https://github.com/lcgasparri/lcgasparri.github.io" target="_blank" rel="noopener">Code</a>
+		</footer>
+
+	</main>
 
 	<!-- JavaScript -->
-	<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="/js/theme.js"></script>
+	<script src="/js/abstracts.js"></script>
 
 </body>
 
