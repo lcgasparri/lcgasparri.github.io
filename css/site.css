@@ -333,12 +333,12 @@ a:hover {
 /* Large screens. */
 @media (min-width: 1800px) {
 	html {
-		font-size: 112.5%; /* 18px */
+		font-size: 105%;
 	}
 }
 
 @media (min-width: 2400px) {
 	html {
-		font-size: 125%; /* 20px */
+		font-size: 110%;
 	}
 }
