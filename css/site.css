@@ -1,4 +1,4 @@
-/* Site styles. Colours and type follow Bootstrap 5's defaults. */
+/* Site styles. Follows Bootstrap 5. */
 
 :root {
 	--bg: #fff;
@@ -25,7 +25,6 @@
 	color-scheme: dark;
 }
 
-/* Without JavaScript the theme attribute is never set, so follow the system. */
 @media (prefers-color-scheme: dark) {
 	:root:not([data-theme]) {
 		--bg: #212529;
@@ -120,7 +119,7 @@ a:hover {
 	padding: 3rem var(--pad) 2.5rem;
 }
 
-/* Header: name and links on the left; the theme toggle sits opposite, level with the name. */
+/* Header. */
 .masthead {
 	position: relative;
 	padding-bottom: 2.25rem;
@@ -152,6 +151,12 @@ a:hover {
 .theme-toggle:hover {
 	color: var(--fg);
 	background: var(--tint);
+}
+
+/* Size icon with the text. */
+.theme-toggle svg {
+	width: 1rem;
+	height: 1rem;
 }
 
 /* Sections: a small label in the left column, content on the right. */
@@ -257,7 +262,6 @@ a:hover {
 	line-height: 1.65;
 }
 
-/* Keep each name on one line so the eye can find where one ends and the next begins. */
 @media (min-width: 576px) {
 	.nowrap {
 		white-space: nowrap;
@@ -305,7 +309,7 @@ a:hover {
 	color: var(--fg);
 }
 
-/* Phones: one column, labels above their content. */
+/* Phones. */
 @media (max-width: 639.98px) {
 	:root {
 		--pad: 1.25rem;
@@ -323,5 +327,18 @@ a:hover {
 	.label {
 		position: static;
 		margin-bottom: .9rem;
+	}
+}
+
+/* Large screens. */
+@media (min-width: 1800px) {
+	html {
+		font-size: 112.5%; /* 18px */
+	}
+}
+
+@media (min-width: 2400px) {
+	html {
+		font-size: 125%; /* 20px */
 	}
 }
